@@ -1,180 +1,220 @@
 <!DOCTYPE html>
-<html lang=en>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport"content="width=device-width,initial-scale=1.0">
-        <title>Personal Portfolio Webpage</title>
-        <link href="styles.css"rel="stylesheet"href="path/to/font-awesome/css/font-awesome.min.css"type="text/css"/>
-        <script src="https://kit.fontawesome.com/b19e61b6ec.js" crossorigin="anonymous"></script>
-        <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
-        <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
-        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-    </head>
-    <body>
-        <nav id="navbar">
-            <li><a class="navbar-name"href="#welcome-section">
-                ksdev
-            </a>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Personal Portfolio Webpage</title>
+    <link
+      href="styles.css"
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+      type="text/css"
+    />
+    <script
+      src="https://kit.fontawesome.com/b19e61b6ec.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@17/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  </head>
+  <body>
+    <nav id="navbar">
+      <li><a class="navbar-name" href="#welcome-section"> ksdev </a></li>
+      <ul id="nav-list">
+        <li>
+          <a href="#welcome-section">Home</a>
+        </li>
+        <li>
+          <a href="#About">About</a>
+        </li>
+        <li>
+          <a href="#Skills">Skills</a>
+        </li>
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+        <li class="oval">
+          <a class="center" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <section id="welcome-section" class="welcome-section">
+      <h1>Hello</h1>
+      <p>I'm KeyShawn Scott,</p>
+      <div class="container">
+        <h2>A <span class="typing"></span></h2>
+      </div>
+
+      <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+      <div class="scroll">
+        <a href="About">
+          <p class="scroll-text">Scroll</p>
+        </a>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </section>
+
+    <section class="About" id="About">
+      <div class="wave">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+      <h3>
+        <span>ABOUT ME</span>
+      </h3>
+      <p>
+        Random Test Paragraph: Debbie knew she was being selfish and
+        unreasonable. She understood why the others in the room were angry and
+        frustrated with her and the way she was acting. In her eyes, it didn't
+        really matter how they felt because she simply didn't care.
+      </p>
+      <div class="grid">
+        <div>
+          <ul>
+            <li>
+              <h4>Name</h4>
+              <p>KeyShawn Scott</p>
             </li>
-            <ul id="nav-list">
-                <li>
-                    <a href="#welcome-section">Home</a>
-                </li>
-                <li>
-                    <a href="#About">About</a>
-                </li>
-                <li>
-                    <a href="#Skills">Skills</a>
-                </li>
-                <li>
-                    <a href="#projects">Projects</a>
-                </li>
-                <li class="oval">
-                    <a class="center"href="#contact">Contact</a>
-                </li>
-            </ul>
-        </nav>
-        <section id="welcome-section"class="welcome-section">
-            <h1>Hello</h1>
-            <p>I'm KeyShawn Scott,</p>
-            <div class="container">
-                <h2>A <span class="typing"></span></h2>
-            </div>
-    
-            <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+            <li>
+              <h4>Email</h4>
+              <p>sklamar717@gmail.com</p>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <h4>Education</h4>
+              <p>BA in Art Studio <br />University of California, Davis</p>
+            </li>
+            <li>
+              <h4>Employment</h4>
+              <p>Open</p>
+            </li>
+          </ul>
+        </div>
+      </div>
 
-            <div class="scroll">
-                <a href="About">
-                    <p class="scroll-text">Scroll</p>
-                </a>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </section>
+      <div class="circle-1"></div>
+      <div class="circle-2"></div>
+      <div class="circle-3"></div>
+      <div class="circle-4"></div>
+      <div class="circle-5"></div>
+    </section>
 
-        <section class="About"id="About">
-            <div class="wave">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-                </svg>
-            </div>
-            <h3>
-                <span>ABOUT ME</span>
-            </h3>
-            <p>Random Test Paragraph: Debbie knew she was being selfish and unreasonable. 
-                She understood why the others in the room were angry and frustrated with her and the way she was acting. 
-                In her eyes, it didn't really matter how they felt because she simply didn't care.</p>
-                <div class="grid">
-                    <div>
-                      <ul>
-                        <li>
-                          <h4>Name</h4>
-                          <p>KeyShawn Scott</p>
-                        </li>
-                        <li>
-                          <h4>Email</h4>
-                          <p>sklamar717@gmail.com</p>
-                        </li>
-                      </ul>
-                    </div>
-                    <div>
-                      <ul>
-                        <li>
-                          <h4>Education</h4>
-                          <p>BA in Art Studio
-                            <br>University of California, Davis
-                          </p>
-                        </li>
-                        <li>
-                          <h4>Employment</h4>
-                          <p>Open</p>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
+    <section class="Skills" id="Skills">
+      <div class="gallery-wrap">
+        <i class="fa-solid fa-circle-arrow-left" id="backBtn"></i>
+        <div class="gallery">
+          <div>
+            <i class="fa-brands fa-square-js" style="color: #ffffff">
+              <p class="icon-text">JavaScript</p>
+            </i>
+            <i class="fa-brands fa-html5" style="color: #ffffff">
+              <p class="icon-text">HTML</p>
+            </i>
+            <i class="fa-brands fa-css3-alt" style="color: #ffffff">
+              <p class="icon-text">CSS</p>
+            </i>
+            <i class="fa-brands fa-react" style="color: #ffffff">
+              <p class="icon-text">React</p>
+            </i>
+            <i class="fa-brands fa-bootstrap" style="color: #ffffff">
+              <p class="icon-text">Bootstrap</p>
+            </i>
+            <i class="fa-brands fa-sass" style="color: #ffffff">
+              <p class="icon-text">Sass</p>
+            </i>
+          </div>
+        </div>
+        <i class="fa-solid fa-circle-arrow-right" id="nextBtn"></i>
+      </div>
+    </section>
 
-                
-                    <div class="circle-1"></div>
-                    <div class="circle-2"></div>
-                    <div class="circle-3"></div>
-                    <div class="circle-4"></div>
-                    <div class="circle-5"></div>
-                   
-                
+    <section class="projects" id="projects">
+      <h5>EXPLORE MY WORK</h5>
+      <div class="projects-grid">
+        <a href="">
+          <img
+            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg"
+            alt="First Project Name"
+            class="project-img"
+          />
+          <p class="project-tile">First Project Name</p>
+        </a>
+        <a href="">
+          <img
+            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg"
+            alt="First Project Name"
+            class="project-img"
+          />
+          <p class="project-tile">Second Project Name</p>
+        </a>
+        <a href="">
+          <img
+            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg"
+            alt="First Project Name"
+            class="project-img"
+          />
+          <p class="project-tile">Third Project Name</p>
+        </a>
+      </div>
+    </section>
 
-        </section>
+    <section class="contact" id="contact">
+      <div class="wave-two">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+      <div id="contact-header">
+        <h6>
+          Get in Touch
+          <span class="colon">:</span>
+        </h6>
+      </div>
+      <div id="contact-links">
+        <a
+          href="https://github.com/KeyShawn-Scott?tab=projects"
+          class="fa-brands fa-github"
+        ></a>
+        <a href="" class="fa-brands fa-linkedin"></a>
+        <a href="mailto:sklamar717@gmail.com" class="fa-solid fa-envelope"></a>
+        <a href="" class="fa-brands fa-instagram"></a>
+        <p id="contact-p">All rights reserved &copy 2023 KeyShawn Scott</p>
+      </div>
 
-        <section class="Skills"id="Skills">
-            <div class="gallery-wrap">
-                <i class="fa-solid fa-circle-arrow-left"id="backBtn"></i>
-                <div class="gallery">
-                    <div>
-                        <i class="fa-brands fa-square-js" style="color: #ffffff;">
-                            <p class="icon-text">JavaScript</p>
-                        </i>
-                        <i class="fa-brands fa-html5" style="color: #ffffff;">
-                            <p class="icon-text">HTML</p>
-                        </i>
-                        <i class="fa-brands fa-css3-alt" style="color: #ffffff;">
-                            <p class="icon-text">CSS</p>
-                        </i>
-                        <i class="fa-brands fa-react" style="color: #ffffff;">
-                            <p class="icon-text">React</p>
-                        </i>
-                        <i class="fa-brands fa-bootstrap" style="color: #ffffff;">
-                            <p class="icon-text">Bootstrap</p>
-                        </i>
-                        <i class="fa-brands fa-sass" style="color: #ffffff;">
-                            <p class="icon-text">Sass</p>
-                        </i>
-                    </div>
-                </div>
-                <i class="fa-solid fa-circle-arrow-right"id="nextBtn"></i>
-            </div>
-            
-        </section>
-
-        <section class="projects"id="projects">
-            <h5>EXPLORE MY WORK</h5>
-            <div class="projects-grid">
-                <a href="">
-                    <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg"alt="First Project Name"class="project-img"/>
-                    <p class="project-tile">First Project Name</p>
-                </a>
-                <a href="">
-                    <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg"alt="First Project Name"class="project-img"/>
-                    <p class="project-tile">Second Project Name</p>
-                </a>
-                <a href="">
-                    <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg"alt="First Project Name"class="project-img"/>
-                    <p class="project-tile">Third Project Name</p>
-                </a>
-            </div>
-        </section>
-
-        <section class="contact"id="contact">
-            <div class="wave-two">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-                </svg>
-            </div>
-            <div id="contact-header">
-                <h6>
-                Get in Touch
-                    <span class="colon">:</span>
-                </h6>
-            </div>
-            <div id="contact-links">
-                <a href="https://github.com/KeyShawn-Scott?tab=projects"class="fa-brands fa-github"></a>
-                <a href=""class="fa-brands fa-linkedin"></a>
-                <a href="mailto:sklamar717@gmail.com"class="fa-solid fa-envelope"></a>
-                <a href=""class="fa-brands fa-instagram"></a>
-                <p id="contact-p">All rights reserved &copy 2023 KeyShawn Scott</p>
-            </div>
-
-            <a class="backtotop"href="#welcome-section"><i class="fa-solid fa-circle-arrow-up"></i></a>
-        </section>
-        <script src="/script.js"></script>
-    </body>
+      <a class="backtotop" href="#welcome-section"
+        ><i class="fa-solid fa-circle-arrow-up"></i
+      ></a>
+    </section>
+    <script src="/script.js"></script>
+  </body>
 </html>
