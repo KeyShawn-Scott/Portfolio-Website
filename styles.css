@@ -4,17 +4,17 @@ html {
 
 @font-face {
   src: url(fonts/Montserrat-VariableFont_wght.ttf);
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
 }
 
 * {
   padding: 0;
   box-sizing: border-box;
-  font-family: Montserrat, sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
-  font-family: Montserrat, sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -111,7 +111,7 @@ h1 {
   color: #373d47;
   font-size: 12rem;
   font-weight: 900;
-  font-family: Montserrat, sans-serif;
+  font-family: "Montserrat", sans-serif;
   letter-spacing: -0.02em;
   margin-right: 500px;
   position: absolute;
@@ -323,7 +323,7 @@ h3 span {
 
 .icon-text {
   font-size: 20px;
-  font-family: Montserrat, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 550;
   text-align: center;
 }
@@ -483,7 +483,7 @@ h3 span {
   font-size: 3.2rem;
   color: white;
   text-align: center;
-  font-family: Montserrat, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
 }
 
