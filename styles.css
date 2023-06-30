@@ -34,6 +34,12 @@ body {
   margin-top: 20px;
 }
 
+@media (max-width: 62rem) {
+  .nav-section {
+    display: none;
+  }
+}
+
 .navbar-name {
   color: white;
   font-size: 20px;
@@ -42,6 +48,15 @@ body {
   position: absolute;
   display: flex;
   margin-left: 120px;
+}
+
+@media (max-width: 32rem) {
+  .navbar-name {
+    position: relative;
+    top: -20px;
+    left: -110px;
+    font-size: 1rem;
+  }
 }
 
 .navbar-name:hover {
@@ -85,6 +100,14 @@ a:hover {
   background: #ffb6c1;
 }
 
+@media (max-width: 32rem) {
+  .oval {
+    position: relative;
+    top: -20px;
+    right: -50px;
+  }
+}
+
 .center {
   font-size: 1em;
   color: #1c232e;
@@ -119,6 +142,14 @@ h1 {
   width: 40%;
 }
 
+@media (max-width: 32rem) {
+  h1 {
+    font-size: 7.5rem;
+    margin-right: 260px;
+    top: -10px;
+  }
+}
+
 #welcome-section > p {
   color: white;
   font-size: 38px;
@@ -129,6 +160,15 @@ h1 {
   position: absolute;
   display: inline-block;
   width: 40%;
+}
+
+@media (max-width: 32rem) {
+  #welcome-section > p {
+    font-size: 26px;
+    margin-right: 255px;
+    margin-top: -120px;
+    white-space: nowrap;
+  }
 }
 
 .container {
@@ -143,9 +183,23 @@ h1 {
   width: 40%;
 }
 
+@media (max-width: 32rem) {
+  .container {
+    margin-right: 255px;
+  }
+}
+
 .container h2 {
   font-size: 38px;
   font-weight: bold;
+}
+
+@media (max-width: 32rem) {
+  .container h2 {
+    font-size: 26px;
+    white-space: nowrap;
+    margin-top: -110px;
+  }
 }
 
 span {
@@ -169,16 +223,26 @@ span {
   margin-right: 1000px;
 }
 
+@media (max-width: 32rem) {
+  .scroll {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 220px;
+  }
+}
+
 .scroll span {
   display: block;
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   border-bottom: 1px solid white;
   border-right: 1px solid white;
   transform: rotate(45deg);
   margin: -10px;
   animation: animate 2s infinite;
-  margin-left: 49px;
+  margin-left: 51px;
 }
 
 .scroll span:nth-child(2) {
