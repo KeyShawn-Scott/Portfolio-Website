@@ -166,7 +166,7 @@ h1 {
   #welcome-section > p {
     font-size: 26px;
     margin-right: 255px;
-    margin-top: -120px;
+    margin-top: -160px;
     white-space: nowrap;
   }
 }
@@ -324,7 +324,7 @@ h3 span {
 }
 
 .aboutmetext {
-  width: 50%; 
+  width: 50%;
   position: relative;
   top: 50%;
   left: 50%;
@@ -349,18 +349,18 @@ h3 span {
   justify-content: center;
   width: min(640px, 85vw);
   margin-inline: auto;
-  margin-top: -60px; 
+  margin-top: -60px;
 }
 
 @media (max-width: 32rem) {
-  .grid { 
+  .grid {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     margin-top: 500px;
     position: relative;
     width: min(640px, 100%);
-    margin-bottom: -150px; 
+    margin-bottom: -150px;
   }
 }
 
@@ -377,8 +377,8 @@ h3 span {
 
 @media (max-width: 32rem) {
   .circle-1 {
-      margin-left: 150px; 
-      margin-top: -650px;
+    margin-left: 150px;
+    margin-top: -650px;
   }
 }
 
@@ -395,8 +395,8 @@ h3 span {
 
 @media (max-width: 32rem) {
   .circle-2 {
-      margin-left: 400px; 
-      margin-top: -700px;
+    margin-left: 400px;
+    margin-top: -700px;
   }
 }
 
@@ -407,8 +407,8 @@ h3 span {
   border-radius: 5000px;
   position: absolute;
   opacity: 0.3;
-  margin-top: -100px; 
-  margin-left: -300px; 
+  margin-top: -100px;
+  margin-left: -300px;
 }
 
 .circle-4 {
@@ -425,8 +425,8 @@ h3 span {
 
 @media (max-width: 32rem) {
   .circle-4 {
-      margin-top: -790px;
-      margin-left: -40px; 
+    margin-top: -790px;
+    margin-left: -40px;
   }
 }
 
@@ -442,7 +442,7 @@ h3 span {
 
 @media (max-width: 32rem) {
   .circle-5 {
-      margin-left: 200px; 
+    margin-left: 200px;
   }
 }
 
@@ -459,7 +459,7 @@ h3 span {
 
 @media (max-width: 32rem) {
   .circle-6 {
-      margin-left: 350px; 
+    margin-left: 350px;
   }
 }
 
@@ -475,10 +475,8 @@ h3 span {
 
 @media (max-width: 32rem) {
   .Skills {
-      
   }
 }
-
 
 .icon-text {
   font-size: 20px;
@@ -493,7 +491,6 @@ h3 span {
 
 @media (max-width: 32rem) {
   .Skills i {
-      
   }
 }
 
@@ -538,7 +535,6 @@ h3 span {
 @media (max-width: 32rem) {
   #backBtn,
   #nextBtn {
-   
   }
 }
 
@@ -700,7 +696,7 @@ h3 span {
 
 @media (max-width: 32rem) {
   .backtotop {
-    margin-right: -30px; 
+    margin-right: -30px;
   }
 }
 
