@@ -301,7 +301,7 @@ span {
 .About {
   background-color: #ffe4e1;
   text-align: center;
-  padding: 4rem 25rem;
+  padding: 4rem 10vw;
 }
 
 h3 span {
@@ -312,12 +312,56 @@ h3 span {
   line-height: 1.34rem;
 }
 
+@media (max-width: 32rem) {
+  h3 span {
+    font-size: 22px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 420px;
+  }
+}
+
+.aboutmetext {
+  width: 50%; 
+  position: relative;
+  top: 50%;
+  left: 50%;
+  margin-top: 80px;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 32rem) {
+  .aboutmetext {
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 580px;
+  }
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   justify-content: center;
   width: min(640px, 85vw);
   margin-inline: auto;
+  margin-top: -60px; 
+}
+
+@media (max-width: 32rem) {
+  .grid { 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 500px;
+    position: relative;
+    width: min(640px, 100%);
+    margin-bottom: -150px; 
+  }
 }
 
 .circle-1 {
@@ -328,7 +372,14 @@ h3 span {
   position: absolute;
   opacity: 0.3;
   margin-top: -300px;
-  margin-left: 200px;
+  margin-left: 500px;
+}
+
+@media (max-width: 32rem) {
+  .circle-1 {
+      margin-left: 150px; 
+      margin-top: -650px;
+  }
 }
 
 .circle-2 {
@@ -338,8 +389,15 @@ h3 span {
   border-radius: 5000px;
   position: absolute;
   opacity: 0.3;
-  margin-left: 950px;
+  margin-left: 1200px;
   margin-top: -400px;
+}
+
+@media (max-width: 32rem) {
+  .circle-2 {
+      margin-left: 400px; 
+      margin-top: -700px;
+  }
 }
 
 .circle-3 {
@@ -349,30 +407,60 @@ h3 span {
   border-radius: 5000px;
   position: absolute;
   opacity: 0.3;
-  margin-top: -100px;
-  margin-left: -500px;
+  margin-top: -100px; 
+  margin-left: -300px; 
 }
 
 .circle-4 {
-  height: 100px;
-  width: 100px;
+  height: 70px;
+  width: 70px;
   background-color: #ffb6c1;
   border-radius: 5000px;
   position: absolute;
   opacity: 0.3;
   margin-top: -450px;
-  margin-left: -150px;
+  margin-left: 100px;
   z-index: 10;
 }
 
+@media (max-width: 32rem) {
+  .circle-4 {
+      margin-top: -790px;
+      margin-left: -40px; 
+  }
+}
+
 .circle-5 {
-  height: 250px;
-  width: 250px;
+  height: 150px;
+  width: 150px;
   background-color: #ffb6c1;
   border-radius: 5000px;
   position: absolute;
   opacity: 0.3;
-  margin-left: 500px;
+  margin-left: 700px;
+}
+
+@media (max-width: 32rem) {
+  .circle-5 {
+      margin-left: 200px; 
+  }
+}
+
+.circle-6 {
+  height: 50px;
+  width: 50px;
+  background-color: #ffb6c1;
+  border-radius: 5000px;
+  position: absolute;
+  opacity: 0.3;
+  margin-left: 900px;
+  margin-top: -100px;
+}
+
+@media (max-width: 32rem) {
+  .circle-6 {
+      margin-left: 350px; 
+  }
 }
 
 .Skills {
@@ -385,6 +473,13 @@ h3 span {
   z-index: 50;
 }
 
+@media (max-width: 32rem) {
+  .Skills {
+      
+  }
+}
+
+
 .icon-text {
   font-size: 20px;
   font-family: "Montserrat", sans-serif;
@@ -394,6 +489,12 @@ h3 span {
 
 .Skills i {
   min-width: 200px;
+}
+
+@media (max-width: 32rem) {
+  .Skills i {
+      
+  }
 }
 
 .gallery {
@@ -434,6 +535,13 @@ h3 span {
   font-size: 50px;
 }
 
+@media (max-width: 32rem) {
+  #backBtn,
+  #nextBtn {
+   
+  }
+}
+
 #backBtn {
   margin-left: 20px;
 }
@@ -467,15 +575,9 @@ h3 span {
   margin-top: 300px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 32rem) {
   .projects > h5 {
-    font-size: 2.5rem;
-  }
-}
-
-@media (max-width: 800px) {
-  #contact-header > h6 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -594,6 +696,12 @@ h3 span {
   text-align: center;
   line-height: 50px;
   font-size: 30px;
+}
+
+@media (max-width: 32rem) {
+  .backtotop {
+    margin-right: -30px; 
+  }
 }
 
 .backtotop:hover {
