@@ -155,7 +155,7 @@ h1 {
   font-size: 38px;
   font-weight: bold;
   margin-right: 500px;
-  margin-bottom: -530px;
+  margin-bottom: -590px;
   position: absolute;
   display: inline-block;
   width: 40%;
@@ -166,7 +166,7 @@ h1 {
   #welcome-section > p {
     font-size: 26px;
     margin-right: 255px;
-    margin-top: -160px;
+    margin-top: -240px;
     white-space: nowrap;
   }
 }
@@ -178,7 +178,7 @@ h1 {
   align-items: center;
   justify-content: center;
   margin-right: 500px;
-  margin-top: 660px;
+  margin-top: 670px;
   position: absolute;
   width: 40%;
 }
@@ -198,7 +198,7 @@ h1 {
   .container h2 {
     font-size: 26px;
     white-space: nowrap;
-    margin-top: -110px;
+    margin-top: -120px;
   }
 }
 
@@ -221,7 +221,6 @@ span {
   justify-content: center;
   margin-top: 620px;
   margin-right: 1000px;
-  height: 100vh;
 }
 
 @media (max-width: 32rem) {
@@ -230,7 +229,7 @@ span {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin-top: 570px;
+    margin-top: 220px;
   }
 }
 
