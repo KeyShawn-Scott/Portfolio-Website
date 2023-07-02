@@ -469,7 +469,7 @@ h3 span {
   margin: 0;
   padding: 4rem 2rem;
   text-align: center;
-  font-size: 70px;
+  font-size: clamp(1rem, 4vw + 1rem, 70px);
   position: relative;
   z-index: 50;
   width: 100%;
@@ -533,7 +533,7 @@ h3 span {
 @media (max-width: 32rem) {
   #backBtn,
   #nextBtn {
-    display: none;
+    
   }
 }
 
