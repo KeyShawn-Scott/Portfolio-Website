@@ -327,18 +327,19 @@ h3 span {
   position: relative;
   top: 50%;
   left: 50%;
-  margin-top: 80px;
+  margin-top: 100px;
   transform: translate(-50%, -50%);
+  line-height: 1.6em;
+  font-weight: 410;
 }
 
 @media (max-width: 32rem) {
   .aboutmetext {
-    font-size: 14px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin-top: 580px;
+    margin-top: 650px;
   }
 }
 
@@ -348,7 +349,8 @@ h3 span {
   justify-content: center;
   width: min(640px, 85vw);
   margin-inline: auto;
-  margin-top: -60px;
+  margin-top: -70px;
+  font-weight: 410;
 }
 
 @media (max-width: 32rem) {
@@ -356,7 +358,7 @@ h3 span {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin-top: 500px;
+    margin-top: 620px;
     position: relative;
     width: min(640px, 100%);
     margin-bottom: -150px;
