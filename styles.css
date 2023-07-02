@@ -270,14 +270,13 @@ span {
 
 .wave {
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   width: 100%;
   overflow: hidden;
   line-height: 0;
   transform: rotate(180deg);
   z-index: 40;
-  margin-bottom: -0.5px;
 }
 
 .wave svg {
@@ -469,8 +468,9 @@ h3 span {
   padding: 4rem 2rem;
   text-align: center;
   font-size: 70px;
-  position: absolute;
+  position: relative;
   z-index: 50;
+  width: 100%;
 }
 
 @media (max-width: 32rem) {
@@ -487,11 +487,7 @@ h3 span {
 
 .Skills i {
   min-width: 200px;
-}
-
-@media (max-width: 32rem) {
-  .Skills i {
-  }
+  font-size: auto;
 }
 
 .gallery {
@@ -535,6 +531,7 @@ h3 span {
 @media (max-width: 32rem) {
   #backBtn,
   #nextBtn {
+    display: none;
   }
 }
 
@@ -568,7 +565,7 @@ h3 span {
   text-align: center;
   font-weight: 700;
   line-height: 1.34rem;
-  margin-top: 300px;
+  margin-top: 0px;
 }
 
 @media (max-width: 32rem) {
