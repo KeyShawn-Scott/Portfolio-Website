@@ -506,7 +506,7 @@ h3 span {
 }
 
 .gallery div {
-  width: 100%;
+  width: 160%;
   display: flex;
   padding: 10px;
   flex: none;
