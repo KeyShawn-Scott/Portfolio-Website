@@ -23,7 +23,7 @@ body {
 }
 
 #navbar {
-  background-color: #1c232e;
+  background-color: transparent;
   position: absolute;
   top: 0;
   left: 0;
@@ -129,6 +129,9 @@ a:hover {
   z-index: 30;
 }
 
+.image-container {
+  position: relative;
+}
 
 .me {
   height: 400px; 
@@ -151,7 +154,25 @@ a:hover {
   }
 }
 
+@media (max-width: 32rem) {
+  .me {
+    height: 275px; 
+    width: calc(275px * 1);
+    margin-top: 250px;
+    border: 8px solid transparent;
+    box-shadow: 5px 5px 0px #ffb6c1; 
+    margin-left: auto; 
+  }
 
+  @keyframes moveBorder {
+    0% {
+      box-shadow: 5px 5px 0px #ffb6c1;
+    }
+    100% {
+      box-shadow: 10px 10px 0px #ffb6c1;
+    }
+  }
+}
 
 h1 {
   margin-bottom: 400px;
@@ -253,7 +274,7 @@ span {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin-top: 220px;
+    margin-top: 240px;
   }
 }
 
