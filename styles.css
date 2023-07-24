@@ -296,7 +296,7 @@ h3 span {
 .circle-1 {
   height: 100px;
   width: 100px;
-  background-color: #ffb6c1;
+  background: linear-gradient(180deg, #ffe4e1, #ffb6c1);
   border-radius: 5000px;
   position: absolute;
   opacity: 0.3;
@@ -307,10 +307,10 @@ h3 span {
 .circle-2 {
   height: 200px;
   width: 200px;
-  background-color: #ffb6c1;
+  background: linear-gradient(-90deg,#ffb6c1, #ffe4e1);
   border-radius: 5000px;
   position: absolute;
-  opacity: 0.3;
+  opacity: 0.9;
   margin-left: 1200px;
   margin-top: -400px;
 }
@@ -318,10 +318,10 @@ h3 span {
 .circle-3 {
   height: 300px;
   width: 300px;
-  background-color: #ffb6c1;
+  background: linear-gradient(180deg,#ffe4e1, #ffb6c1);
   border-radius: 5000px;
   position: absolute;
-  opacity: 0.3;
+  opacity: 0.9;
   margin-top: -100px;
   margin-left: -300px;
 }
@@ -329,10 +329,10 @@ h3 span {
 .circle-4 {
   height: 70px;
   width: 70px;
-  background-color: #ffb6c1;
+  background: linear-gradient(180deg, #ffe4e1, #ffb6c1);
   border-radius: 5000px;
   position: absolute;
-  opacity: 0.3;
+  opacity: 0.4;
   margin-top: -450px;
   margin-left: 100px;
   z-index: 10;
@@ -341,20 +341,20 @@ h3 span {
 .circle-5 {
   height: 150px;
   width: 150px;
-  background-color: #ffb6c1;
+  background: linear-gradient(180deg, #ffe4e1, #ffb6c1);
   border-radius: 5000px;
   position: absolute;
-  opacity: 0.3;
+  opacity: 0.9;
   margin-left: 700px;
 }
 
 .circle-6 {
   height: 50px;
   width: 50px;
-  background-color: #ffb6c1;
+  background: linear-gradient(180deg, #ffb6c1, #ffe4e1);
   border-radius: 5000px;
   position: absolute;
-  opacity: 0.3;
+  opacity: 0.4;
   margin-left: 900px;
   margin-top: -100px;
 }
@@ -594,7 +594,7 @@ h3 span {
     right: -50px;
   }
 
-  .me {
+  .me { 
     height: 275px;
     width: calc(275px * 1);
     margin-top: 250px;
@@ -678,6 +678,7 @@ h3 span {
   .circle-2 {
     margin-left: 400px;
     margin-top: -700px;
+    opacity: 100%;
   }
 
   .circle-4 {
