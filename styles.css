@@ -307,7 +307,7 @@ h3 span {
 .circle-2 {
   height: 200px;
   width: 200px;
-  background: linear-gradient(-90deg,#ffb6c1, #ffe4e1);
+  background: linear-gradient(-90deg, #ffb6c1, #ffe4e1);
   border-radius: 5000px;
   position: absolute;
   opacity: 0.9;
@@ -318,7 +318,7 @@ h3 span {
 .circle-3 {
   height: 300px;
   width: 300px;
-  background: linear-gradient(180deg,#ffe4e1, #ffb6c1);
+  background: linear-gradient(180deg, #ffe4e1, #ffb6c1);
   border-radius: 5000px;
   position: absolute;
   opacity: 0.9;
@@ -594,7 +594,7 @@ h3 span {
     right: -50px;
   }
 
-  .me { 
+  .me {
     height: 275px;
     width: calc(275px * 1);
     margin-top: 250px;
