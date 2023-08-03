@@ -1,7 +1,8 @@
 # Portfolio 
 
-Description: Portfolio Website for Projects!
+Description: Responsive Portfolio Website for My Diverse Projects, including MyCookbook!
 
 ## Subheader
 
-Watch tutorial on YouTube. 
+Uniting Creativity and Functionality! 📱💻
+Featuring MyCookbook Project and More Exciting Creations to Come! 🚀
