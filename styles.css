@@ -273,11 +273,7 @@ h3 span {
 
 .aboutmetext {
   width: 50%;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  margin-top: 100px;
-  transform: translate(-50%, -50%);
+  margin: 0 auto;
   line-height: 1.6em;
   font-weight: 410;
 }
@@ -288,7 +284,6 @@ h3 span {
   justify-content: center;
   width: min(640px, 85vw);
   margin-inline: auto;
-  margin-top: -70px;
   font-weight: 410;
 }
 
@@ -713,4 +708,31 @@ h3 span {
   .backtotop {
     margin-right: -30px;
   }
+}
+
+.welcome-section h1,
+.welcome-section p.who-i-am,
+.welcome-section div.container,
+.About h3,
+.About p.aboutmetext,
+.About ul li h4,
+.About ul li p,
+.Skills div.icons-animating,
+.projects {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s, transform 1s;
+}
+
+.welcome-section.show h1,
+.welcome-section.show p.who-i-am,
+.welcome-section.show div.container,
+.About.show h3,
+.About.show p.aboutmetext,
+.About.show ul li h4,
+.About.show ul li p,
+.Skills.show div.icons-animating,
+.projects.show {
+  opacity: 1;
+  transform: translateY(0);
 }

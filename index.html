@@ -53,13 +53,13 @@
         />
       </div>
       <h1>Hello</h1>
-      <p>I'm KeyShawn Scott,</p>
+      <p class="who-i-am">I'm KeyShawn Scott,</p>
       <div class="container">
         <h2>A <span class="typing"></span></h2>
       </div>
 
       <div class="scroll">
-        <a>
+        <a href="#About">
           <p class="scroll-text">Scroll</p>
         </a>
         <span></span>
@@ -82,9 +82,7 @@
           ></path>
         </svg>
       </div>
-      <h3>
-        <span>ABOUT ME</span>
-      </h3>
+      <h3>ABOUT ME</h3>
       <p class="aboutmetext">
         I am a front-end developer with a passion for creating captivating user
         experiences. Going to college for Art allowed me to be exposed to
@@ -132,7 +130,7 @@
       <div class="gallery-wrap">
         <i class="fa-solid fa-circle-arrow-left" id="backBtn"></i>
         <div class="gallery">
-          <div>
+          <div class="icons-animating">
             <i class="fa-brands fa-square-js" style="color: #ffffff">
               <p class="icon-text">JavaScript</p>
             </i>
@@ -230,5 +228,11 @@
     </section>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="/script.js"></script>
+    <script>
+      applyAnimation(document.getElementById("About"));
+      applyAnimation(document.getElementById("welcome-section"));
+      applyAnimation(document.getElementById("Skills"));
+      applyAnimation(document.getElementById("projects"));
+    </script>
   </body>
 </html>
