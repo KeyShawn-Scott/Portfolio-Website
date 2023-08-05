@@ -282,7 +282,7 @@ h3 span {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   justify-content: center;
-  width: min(640px, 85vw);
+  width: 57%;
   margin-inline: auto;
   font-weight: 410;
 }
@@ -644,24 +644,6 @@ h3 span {
     left: 50%;
     transform: translate(-50%, -50%);
     margin-top: 420px;
-  }
-
-  .aboutmetext {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin-top: 650px;
-  }
-
-  .grid {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin-top: 620px;
-    position: relative;
-    width: min(640px, 100%);
-    margin-bottom: -150px;
   }
 
   .circle-1 {

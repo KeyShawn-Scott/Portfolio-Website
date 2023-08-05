@@ -58,3 +58,20 @@ function applyAnimation(element) {
 
   observer.observe(element);
 }
+
+// Section 4: Save the current scroll position to local storage
+window.onbeforeunload = function() {
+  localStorage.setItem("scrollPosition", window.scrollY);
+};
+  
+// Check if there's a stored scroll position and restore it
+window.onload = function() {
+  const scrollPosition = localStorage.getItem("scrollPosition");
+  if (scrollPosition) {
+    setTimeout(() => {
+      window.scrollTo(0, parseInt(scrollPosition));
+    }, 0);
+    localStorage.removeItem("scrollPosition");
+  }
+};     
+
