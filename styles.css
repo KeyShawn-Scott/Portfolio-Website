@@ -15,7 +15,6 @@ html {
 
 body {
   margin: 0;
-  padding: 0;
   width: 100%;
   height: 100%;
   overflow-x: hidden;
@@ -24,8 +23,8 @@ body {
 #navbar {
   background-color: transparent;
   position: absolute;
-  top: 0;
-  left: 0;
+  /* top: 0; */
+  /* left: 0; */
   width: 90%;
   display: flex;
   justify-content: space-between;
@@ -38,7 +37,7 @@ body {
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 0.5px;
-  position: absolute;
+  /* position: absolute; */
   display: flex;
   margin-left: 120px;
 }
@@ -94,19 +93,19 @@ a:hover {
 }
 
 #welcome-section {
-  width: 100%;
+  /* width: 100%; */
   height: 100vh;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
   background-color: #1c232e;
-  position: relative;
+  /* position: relative; */
   z-index: 30;
 }
 
 .image-container {
-  position: relative;
+  /* position: relative; */
 }
 
 .me {
@@ -135,11 +134,11 @@ h1 {
   color: #373d47;
   font-size: 12rem;
   font-weight: 900;
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
   letter-spacing: -0.02em;
   margin-right: 500px;
   position: absolute;
-  display: inline-block;
+  /* display: inline-block; */
   width: 40%;
 }
 
@@ -150,7 +149,7 @@ h1 {
   margin-right: 500px;
   margin-bottom: -590px;
   position: absolute;
-  display: inline-block;
+  /* display: inline-block; */
   width: 40%;
   height: 100vh;
 }
@@ -158,9 +157,9 @@ h1 {
 .container {
   height: 100vh;
   color: white;
-  display: inline-block;
-  align-items: center;
-  justify-content: center;
+  /* display: inline-block; */
+  /* align-items: center; */
+  /* justify-content: center; */
   margin-right: 500px;
   margin-top: 670px;
   position: absolute;
@@ -183,7 +182,7 @@ span {
   margin-bottom: 50px;
   font-weight: 500;
 }
-
+/* IM HERE */
 .scroll {
   position: absolute;
   transform: translate(-50%, -50%);
