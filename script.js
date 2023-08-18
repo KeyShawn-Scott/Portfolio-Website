@@ -60,12 +60,12 @@ function applyAnimation(element) {
 }
 
 // Section 4: Save the current scroll position to local storage
-window.onbeforeunload = function() {
+window.onbeforeunload = function () {
   localStorage.setItem("scrollPosition", window.scrollY);
 };
-  
+
 // Check if there's a stored scroll position and restore it
-window.onload = function() {
+window.onload = function () {
   const scrollPosition = localStorage.getItem("scrollPosition");
   if (scrollPosition) {
     setTimeout(() => {
@@ -73,5 +73,9 @@ window.onload = function() {
     }, 0);
     localStorage.removeItem("scrollPosition");
   }
-};     
+};
 
+applyAnimation(document.getElementById("About"));
+applyAnimation(document.getElementById("welcome-section"));
+applyAnimation(document.getElementById("Skills"));
+applyAnimation(document.getElementById("projects"));
