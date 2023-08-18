@@ -187,7 +187,7 @@ a:hover {
   margin-right: 500px;
   margin-top: -230px; 
   position: absolute;
-  width: 40%;
+  /* width: 40%; */
 }
 
 #describe-me > h2 {
@@ -722,6 +722,7 @@ h3 span {
 .welcome-section h1,
 .welcome-section p.who-i-am,
 .welcome-section div.container,
+.welcome-section h2, 
 .About h3,
 .About p.aboutmetext,
 .About ul li h4,
@@ -736,6 +737,7 @@ h3 span {
 .welcome-section.show h1,
 .welcome-section.show p.who-i-am,
 .welcome-section.show div.container,
+.welcome-section.show h2, 
 .About.show h3,
 .About.show p.aboutmetext,
 .About.show ul li h4,
