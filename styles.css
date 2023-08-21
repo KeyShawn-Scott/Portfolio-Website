@@ -12,6 +12,7 @@ html {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
+
 body {
   margin: 0;
   width: 100%;
@@ -26,6 +27,13 @@ body {
   justify-content: space-between;
   align-items: center;
   z-index: 100;
+}
+
+.nav-items i {
+  background-image: linear-gradient(90deg, transparent, white);
+  -webkit-background-clip: text; 
+  background-clip: text;
+  color: transparent;
 }
 
 .nav-items {
@@ -593,17 +601,18 @@ h3 span {
   .nav-section {
     display: none;
   }
-
- 
   
+  #navbar {
+    border: 3px dotted purple; 
+    
+  }
   .navbar-name {
     color: white;
     font-size: 20px;
     font-weight: 500;
     letter-spacing: 0.5px;
-    margin-left: 20px; 
+    margin-left: -20px; 
     border: 3px dotted red;
-
   }
   
   .navbar-name:hover {
