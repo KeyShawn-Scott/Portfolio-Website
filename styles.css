@@ -161,65 +161,63 @@ a {
   transform: rotate(-405deg);
 }
 
-@media (max-width: 1500px) {
-  .menu-button-container {
-    display: flex;
-  }
+.menu-button-container {
+  display: flex;
+}
 
-  .menu {
-    position: absolute;
-    top: 0;
-    margin-top: 100px;
-    left: 0;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    z-index: 400;
-  }
-  #menu-toggle ~ .menu li {
-    height: 0;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    transition: height 500ms cubic-bezier(0.23, 1, 0.32, 1);
-  }
-  #menu-toggle:checked ~ .menu li {
-    background: #1c232e;
-    height: 2.5em;
-    padding: 40px 0;
-    transition: height 500ms cubic-bezier(0.23, 1, 0.32, 1);
-  }
-  .menu > li {
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0.5em 0;
-    width: 100%;
-    color: white;
-    font-size: 20px;
-    line-height: 1.6em;
-    font-weight: 600;
-  }
-  .menu > li:not(:last-child) {
-    border-bottom: 1px solid #444;
-  }
-  .hidden-oval {
-    background: white;
-    border-radius: 50px;
-    margin: 0 auto;
-  }
+.menu {
+  position: absolute;
+  top: 0;
+  margin-top: 100px;
+  left: 0;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  z-index: 400;
+}
+#menu-toggle ~ .menu li {
+  height: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  transition: height 500ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+#menu-toggle:checked ~ .menu li {
+  background: #1c232e;
+  height: 2.5em;
+  padding: 40px 0;
+  transition: height 500ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+.menu > li {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0.5em 0;
+  width: 100%;
+  color: white;
+  font-size: 20px;
+  line-height: 1.6em;
+  font-weight: 600;
+}
+.menu > li:not(:last-child) {
+  border-bottom: 1px solid #444;
+}
+.hidden-oval {
+  background: white;
+  border-radius: 50px;
+  margin: 0 auto;
+}
 
-  #hidden-center {
-    color: #1c232e;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 15px;
-    line-height: 1.6em;
-    font-size: 20px;
-    font-weight: 600;
-  }
+#hidden-center {
+  color: #1c232e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 15px;
+  line-height: 1.6em;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 #welcome-section {
