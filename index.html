@@ -25,35 +25,35 @@
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
   </head>
   <body>
-    <nav id="navbar">
-      <div class="nav-items">
+    <section class="top-nav">
+      <div class="logo">
+        <a href="#welcome-section"
+          ><i class="fa-brands fa-medium"></i>
+          ksdev
+        </a>
+      </div>
+      <ul class="nav-items">
+        <li><a href="#welcome-section">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a class="oval" id="center" href="#contact">Contact</a></li>
+      </ul>
+      <input id="menu-toggle" type="checkbox" />
+      <label class="menu-button-container" for="menu-toggle">
+        <div class="menu-button"></div>
+      </label>
+      <ul class="menu">
+        <li><a href="#welcome-section">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li>
-          <a class="navbar-name" href="#welcome-section"
-            ><i class="fa-brands fa-medium"></i>
-            ksdev
-          </a>
+          <a class="hidden-oval" id="hidden-center" href="#contact">Contact</a>
         </li>
-      </div>
-      <div class="nav-items">
-        <ul id="nav-list">
-          <li class="nav-section">
-            <a href="#welcome-section">Home</a>
-          </li>
-          <li class="nav-section">
-            <a href="#About">About</a>
-          </li>
-          <li class="nav-section">
-            <a href="#Skills">Skills</a>
-          </li>
-          <li class="nav-section">
-            <a href="#projects">Projects</a>
-          </li>
-          <li class="oval">
-            <a class="center" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+      </ul>
+    </section>
+
     <section id="welcome-section" class="welcome-section">
       <div class="image-container">
         <img
@@ -75,12 +75,14 @@
       </div>
 
       <div class="scroll">
-        <a href="#About">
-          <p class="scroll-text">Scroll</p>
-        </a>
-        <span></span>
-        <span></span>
-        <span></span>
+        <div class="scroll-text">
+          <a href="#About"> Scroll </a>
+        </div>
+        <div class="arrows">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
     </section>
 
@@ -147,22 +149,22 @@
         <i class="fa-solid fa-circle-arrow-left" id="backBtn"></i>
         <div class="gallery">
           <div class="icons-animating">
-            <i class="fa-brands fa-square-js" style="color: #ffffff">
+            <i class="fa-brands fa-square-js" style="color: #f9f9f9">
               <p class="icon-text">JavaScript</p>
             </i>
-            <i class="fa-brands fa-html5" style="color: #ffffff">
+            <i class="fa-brands fa-html5" style="color: #f9f9f9">
               <p class="icon-text">HTML</p>
             </i>
-            <i class="fa-brands fa-css3-alt" style="color: #ffffff">
+            <i class="fa-brands fa-css3-alt" style="color: #f9f9f9">
               <p class="icon-text">CSS</p>
             </i>
-            <i class="fa-brands fa-react" style="color: #ffffff">
+            <i class="fa-brands fa-react" style="color: #f9f9f9">
               <p class="icon-text">React</p>
             </i>
-            <i class="fa-brands fa-bootstrap" style="color: #ffffff">
+            <i class="fa-brands fa-bootstrap" style="color: #f9f9f9">
               <p class="icon-text">Bootstrap</p>
             </i>
-            <i class="fa-brands fa-sass" style="color: #ffffff">
+            <i class="fa-brands fa-sass" style="color: #f9f9f9">
               <p class="icon-text">Sass</p>
             </i>
           </div>
@@ -242,8 +244,8 @@
           target="_blank"
           class="fa-brands fa-instagram"
         ></a>
-        <p id="contact-p">All rights reserved &copy 2023 KeyShawn Scott</p>
       </div>
+      <p id="contact-p">All rights reserved &copy 2023 KeyShawn Scott</p>
 
       <a class="backtotop" href="#welcome-section"
         ><i class="fa-solid fa-circle-arrow-up"></i

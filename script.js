@@ -1,6 +1,6 @@
 // Section 1 - Typed.js
 // Create a new Typed instance and target the element with class "typing"
-var typed = new Typed(".typing", {
+let typed = new Typed(".typing", {
   // Set the strings to be typed out in the element with class "typing"
   strings: ["Front-End Developer", "Visual Artist", "Lifelong Learner"],
 
@@ -79,3 +79,14 @@ applyAnimation(document.getElementById("About"));
 applyAnimation(document.getElementById("welcome-section"));
 applyAnimation(document.getElementById("Skills"));
 applyAnimation(document.getElementById("projects"));
+
+const menuToggleEl = document.getElementById("menu-toggle");
+const contactLink = document.querySelector(".nav-items .oval#center");
+
+menuToggleEl.addEventListener("change", () => {
+  if (menuToggleEl.checked) {
+    contactLink.style.display = "none";
+  } else {
+    contactLink.style.display = "block";
+  }
+});
