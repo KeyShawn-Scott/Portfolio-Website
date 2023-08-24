@@ -1,24 +1,19 @@
 // Section 1 - Typed.js
-// Create a new Typed instance and target the element with class "typing"
+
 let typed = new Typed(".typing", {
-  // Set the strings to be typed out in the element with class "typing"
   strings: ["Front-End Developer", "Visual Artist", "Lifelong Learner"],
 
-  // Set the typing speed in milliseconds (time taken to type each character)
   typeSpeed: 150,
 
-  // Set the backspacing speed in milliseconds (time taken to delete each character when looping back)
   backSpeed: 150,
 
-  // Set the loop option to true to make the strings loop endlessly
   loop: true,
 });
 
 // Section 2 - Smooth Horizontal Scrolling
-// Get the element with class "gallery" and store it in the variable scrollContainer
+
 let scrollContainer = document.querySelector(".gallery");
 
-// Get the elements with IDs "backBtn" and "nextBtn" and store them in variables
 let backBtn = document.getElementById("backBtn");
 let nextBtn = document.getElementById("nextBtn");
 
@@ -79,6 +74,8 @@ applyAnimation(document.getElementById("About"));
 applyAnimation(document.getElementById("welcome-section"));
 applyAnimation(document.getElementById("Skills"));
 applyAnimation(document.getElementById("projects"));
+
+// Section 5: Remove Center when hamburger menu is clicked
 
 const menuToggleEl = document.getElementById("menu-toggle");
 const contactLink = document.querySelector(".nav-items .oval#center");
