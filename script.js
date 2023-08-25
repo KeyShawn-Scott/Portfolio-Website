@@ -16,6 +16,7 @@ let scrollContainer = document.querySelector(".gallery");
 
 let backBtn = document.getElementById("backBtn");
 let nextBtn = document.getElementById("nextBtn");
+let scrollAmount = 120; // Default scroll amount
 
 // Add a wheel event listener to the scrollContainer element
 scrollContainer.addEventListener("wheel", (evt) => {
@@ -27,14 +28,19 @@ scrollContainer.addEventListener("wheel", (evt) => {
 // Add a click event listener to the nextBtn element
 nextBtn.addEventListener("click", () => {
   scrollContainer.style.scrollBehavior = "smooth"; // Enable smooth scrolling
-  scrollContainer.scrollLeft += 120; // Scroll horizontally to the right by 120 pixels
+  scrollContainer.scrollLeft += scrollAmount; // Scroll horizontally to the right by 120 pixels
 });
 
 // Add a click event listener to the backBtn element
 backBtn.addEventListener("click", () => {
   scrollContainer.style.scrollBehavior = "smooth"; // Enable smooth scrolling
-  scrollContainer.scrollLeft -= 120; // Scroll horizontally to the left by 120 pixels
+  scrollContainer.scrollLeft -= scrollAmount; // Scroll horizontally to the left by 120 pixels
 });
+
+// Check for specific media query conditions and adjust the scroll amount
+if (window.matchMedia("(max-width: 320px)").matches) {
+  scrollAmount = 65; // Adjusted scroll amount for max-width: 320px
+}
 
 // Section 3 - Reusable function to apply the animation classes
 function applyAnimation(element) {
