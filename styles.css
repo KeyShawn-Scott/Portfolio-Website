@@ -632,7 +632,6 @@ h3 {
   background-color: #1c232e;
   width: 100%;
   height: auto;
-  margin: 0;
   padding: 1rem 2rem;
   display: flex;
   flex-direction: column;
@@ -816,6 +815,24 @@ h3 {
 
   .wave-two {
     margin-bottom: 269px;
+  }
+
+  .contact {
+    background-color: #1c232e;
+    width: 100%;
+    height: auto;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 60px;
+  }
+
+  #contact-links {
+    
   }
 
   #contact-header > h6 {
