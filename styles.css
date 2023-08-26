@@ -420,7 +420,7 @@ h3 {
   height: 100px;
   width: 100px;
   background: linear-gradient(180deg, #ffe4e1, #ffb6c1);
-  border-radius: 5000px;
+  border-radius: 300px;
   position: absolute;
   opacity: 0.3;
   margin: -300px 0 0 500px;
@@ -430,7 +430,7 @@ h3 {
   height: 200px;
   width: 200px;
   background: linear-gradient(-90deg, #ffb6c1, #ffe4e1);
-  border-radius: 5000px;
+  border-radius: 300px;
   position: absolute;
   opacity: 0.9;
   margin: -400px 0 0 1200px;
@@ -440,7 +440,7 @@ h3 {
   height: 300px;
   width: 300px;
   background: linear-gradient(180deg, #ffe4e1, #ffb6c1);
-  border-radius: 5000px;
+  border-radius: 300px;
   position: absolute;
   opacity: 0.9;
   margin: -100px 0 0 -300px;
@@ -450,7 +450,7 @@ h3 {
   height: 70px;
   width: 70px;
   background: linear-gradient(180deg, #ffe4e1, #ffb6c1);
-  border-radius: 5000px;
+  border-radius: 300px;
   position: absolute;
   opacity: 0.4;
   margin: -450px 0 0 100px;
@@ -461,7 +461,7 @@ h3 {
   height: 150px;
   width: 150px;
   background: linear-gradient(180deg, #ffe4e1, #ffb6c1);
-  border-radius: 5000px;
+  border-radius: 300px;
   position: absolute;
   opacity: 0.9;
   margin: 0 0 0 700px;
@@ -471,7 +471,7 @@ h3 {
   height: 50px;
   width: 50px;
   background: linear-gradient(180deg, #ffb6c1, #ffe4e1);
-  border-radius: 5000px;
+  border-radius: 300px;
   position: absolute;
   opacity: 0.4;
   margin: -100px 0 0 900px;
