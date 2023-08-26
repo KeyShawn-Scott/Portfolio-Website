@@ -34,8 +34,6 @@ body {
   z-index: 999;
 }
 
-
-
 .logo i {
   background-image: linear-gradient(90deg, transparent, #f9f9f9);
   -webkit-background-clip: text;
@@ -663,9 +661,8 @@ h3 {
 }
 
 #contact-links a {
-  font-size: 20px;
-  letter-spacing: 25px;
-  /* NEED TO CENTER */
+  font-size: 18px;
+  padding: 0 20px;
 }
 
 #contact-links a:hover {
@@ -836,8 +833,6 @@ h3 {
   }
 
   #contact-links {
-   
-    
   }
 
   #contact-header > h6 {
@@ -973,25 +968,6 @@ h3 {
 
   .wave-two {
     margin-bottom: 269px;
-  }
-
-  .contact {
-    background-color: #1c232e;
-    width: 100%;
-    height: auto;
-    padding: 1rem 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    padding-top: 10px;
-    padding-bottom: 60px;
-  }
-
-  #contact-links {
-   
-    
   }
 
   #contact-header > h6 {
