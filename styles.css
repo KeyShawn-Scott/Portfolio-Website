@@ -858,6 +858,153 @@ h3 {
   .nav-items a {
     display: none;
   }
+
+  .top-nav {
+    padding: 20px 0 0 0;
+  }
+
+  .oval-list-item {
+    margin-left: -300px;
+  }
+
+  .logo {
+    margin-left: 20px;
+  }
+
+  .menu-button {
+    margin-right: 50px;
+  }
+
+  .logo a {
+    font-size: 16px;
+  }
+
+  .me {
+    height: 250px;
+    width: calc(250px * 1);
+    margin: 0 auto;
+  }
+
+  @keyframes moveBorder {
+    0% {
+      box-shadow: 5px 5px 0px #ffb6c1;
+    }
+    100% {
+      box-shadow: 10px 10px 0px #ffb6c1;
+    }
+  }
+
+  .text-wrapper {
+    margin-left: 550px;
+    white-space: nowrap;
+  }
+
+  .hello-section > h1 {
+    font-size: 7.25rem;
+    margin-bottom: 450px;
+  }
+
+  .who-i-am {
+    font-size: 24px;
+  }
+
+  #describe-me > h2 {
+    font-size: 24px;
+  }
+
+  .name-section,
+  #describe-me {
+    transform: translateY(-252px);
+  }
+
+  .scroll {
+    left: 50%;
+    margin-left: unset;
+    margin-bottom: unset;
+  }
+
+  .circle-1 {
+    margin: -900px 0 0 70px;
+  }
+
+  .circle-2 {
+    margin: -1200px 0 0 210px;
+  }
+
+  .circle-3 {
+    margin: -100px 0 0 -300px;
+  }
+
+  .circle-4 {
+    margin: -1320px 0 0 -20px;
+  }
+
+  .circle-5 {
+    margin: 0 0 0 120px;
+  }
+
+  .circle-6 {
+    margin: -200px 0 0 230px;
+  }
+
+  .Skills {
+    padding: 0rem 2rem;
+  }
+
+  .icon-text {
+    font-size: 12px;
+  }
+
+  #backBtn,
+  #nextBtn {
+    font-size: 40px;
+  }
+
+  .projects {
+    padding: 6rem 2rem 1rem 2rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .wave-two {
+    margin-bottom: 269px;
+  }
+
+  .contact {
+    background-color: #1c232e;
+    width: 100%;
+    height: auto;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 60px;
+  }
+
+  #contact-links {
+   
+    
+  }
+
+  #contact-header > h6 {
+    font-size: 35px;
+  }
+
+  #contact-p {
+    font-size: 13px;
+  }
+
+  .backtotop {
+    bottom: 1px;
+    right: 1px;
+    padding: 20px;
+    font-size: 25px;
+  }
 }
 
 /* Medium Devices */

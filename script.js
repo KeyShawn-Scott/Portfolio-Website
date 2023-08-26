@@ -16,7 +16,7 @@ let scrollContainer = document.querySelector(".gallery");
 
 let backBtn = document.getElementById("backBtn");
 let nextBtn = document.getElementById("nextBtn");
-let scrollAmount = 120; // Default scroll amount
+let scrollAmount = 300; // Default scroll amount
 
 // Add a wheel event listener to the scrollContainer element
 scrollContainer.addEventListener("wheel", (evt) => {
