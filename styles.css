@@ -34,11 +34,14 @@ body {
   z-index: 999;
 }
 
+
+
 .logo i {
   background-image: linear-gradient(90deg, transparent, #f9f9f9);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  letter-spacing: -2px;
 }
 
 .logo a {
