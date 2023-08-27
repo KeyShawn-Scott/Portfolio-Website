@@ -386,12 +386,17 @@ span {
 }
 
 .About {
-  background-color: #ffe4e1;
+  /* background-color: #ffe4e1; */
+  top: 0;
+  left: 0;
+  background-image: url('images/about-background-final-version.png');
+  background-size: cover;
+  background-position: center;
   text-align: center;
   padding: 4rem 10vw;
 }
 
-h3 {
+#about-header {
   color: #1c232e;
   font-size: 24px;
   text-align: center;
@@ -414,67 +419,6 @@ h3 {
   width: 57%;
   margin-inline: auto;
   font-weight: 410;
-}
-
-.circle-1 {
-  height: 100px;
-  width: 100px;
-  background: linear-gradient(180deg, #ffe4e1, #ffb6c1);
-  border-radius: 300px;
-  position: absolute;
-  opacity: 0.3;
-  margin: -300px 0 0 500px;
-}
-
-.circle-2 {
-  height: 200px;
-  width: 200px;
-  background: linear-gradient(-90deg, #ffb6c1, #ffe4e1);
-  border-radius: 300px;
-  position: absolute;
-  opacity: 0.9;
-  margin: -400px 0 0 1200px;
-}
-
-.circle-3 {
-  height: 300px;
-  width: 300px;
-  background: linear-gradient(180deg, #ffe4e1, #ffb6c1);
-  border-radius: 300px;
-  position: absolute;
-  opacity: 0.9;
-  margin: -100px 0 0 -300px;
-}
-
-.circle-4 {
-  height: 70px;
-  width: 70px;
-  background: linear-gradient(180deg, #ffe4e1, #ffb6c1);
-  border-radius: 300px;
-  position: absolute;
-  opacity: 0.4;
-  margin: -450px 0 0 100px;
-  z-index: 10;
-}
-
-.circle-5 {
-  height: 150px;
-  width: 150px;
-  background: linear-gradient(180deg, #ffe4e1, #ffb6c1);
-  border-radius: 300px;
-  position: absolute;
-  opacity: 0.9;
-  margin: 0 0 0 700px;
-}
-
-.circle-6 {
-  height: 50px;
-  width: 50px;
-  background: linear-gradient(180deg, #ffb6c1, #ffe4e1);
-  border-radius: 300px;
-  position: absolute;
-  opacity: 0.4;
-  margin: -100px 0 0 900px;
 }
 
 .Skills {
@@ -769,30 +713,6 @@ h3 {
     margin-bottom: unset;
   }
 
-  .circle-1 {
-    margin: -900px 0 0 70px;
-  }
-
-  .circle-2 {
-    margin: -1200px 0 0 210px;
-  }
-
-  .circle-3 {
-    margin: -100px 0 0 -300px;
-  }
-
-  .circle-4 {
-    margin: -1320px 0 0 -20px;
-  }
-
-  .circle-5 {
-    margin: 0 0 0 120px;
-  }
-
-  .circle-6 {
-    margin: -200px 0 0 230px;
-  }
-
   .Skills {
     padding: 0rem 2rem;
   }
@@ -916,30 +836,6 @@ h3 {
     left: 50%;
     margin-left: unset;
     margin-bottom: unset;
-  }
-
-  .circle-1 {
-    margin: -900px 0 0 70px;
-  }
-
-  .circle-2 {
-    margin: -1200px 0 0 210px;
-  }
-
-  .circle-3 {
-    margin: -100px 0 0 -300px;
-  }
-
-  .circle-4 {
-    margin: -1320px 0 0 -20px;
-  }
-
-  .circle-5 {
-    margin: 0 0 0 120px;
-  }
-
-  .circle-6 {
-    margin: -200px 0 0 230px;
   }
 
   .Skills {
