@@ -502,7 +502,7 @@ h3 {
 .gallery {
   width: 900px;
   display: flex;
-  overflow-x: scroll;
+  overflow: hidden;
 }
 
 .gallery div {
