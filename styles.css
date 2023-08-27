@@ -389,7 +389,7 @@ span {
   /* background-color: #ffe4e1; */
   top: 0;
   left: 0;
-  background-image: url('images/about-background-final-version.png');
+  background-image: url("images/about-background-final-version.png");
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -891,12 +891,18 @@ span {
   .nav-items a {
     display: none;
   }
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* Extra Large Devices */
 @media (min-width: 992px) and (max-width: 1199px) {
   .menu-button {
     display: none;
+  }
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -905,12 +911,19 @@ span {
   .menu-button {
     display: none;
   }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* Beyond Extra Extra Large Devices */
 @media (min-width: 1400px) {
   .menu-button {
     display: none;
+  }
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
