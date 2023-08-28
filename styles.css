@@ -22,7 +22,6 @@ body {
 }
 
 .top-nav {
-  position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -532,7 +531,7 @@ span {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 4rem;
   width: 100%;
   max-width: 1200px;
@@ -556,7 +555,7 @@ span {
 
 .wave-two {
   position: absolute;
-  margin-bottom: 373px;
+  margin-bottom: 364px;
   width: 100%;
   left: 0;
   overflow: hidden;
@@ -596,7 +595,7 @@ span {
 }
 
 #contact-p {
-  font-size: 16px;
+  font-size: 14px;
   color: #cccccc;
   text-align: center;
   font-weight: 100;
@@ -690,7 +689,7 @@ span {
   }
 
   .hello-section > h1 {
-    font-size: 7.25rem;
+    font-size: 116px;
     margin-bottom: 450px;
   }
 
@@ -728,10 +727,6 @@ span {
 
   .projects {
     padding: 6rem 2rem 1rem 2rem;
-  }
-
-  .projects-grid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 
   .wave-two {
@@ -795,8 +790,8 @@ span {
   }
 
   .me {
-    height: 250px;
-    width: calc(250px * 1);
+    height: 300px;
+    width: calc(300px * 1);
     margin: 0 auto;
   }
 
@@ -815,7 +810,7 @@ span {
   }
 
   .hello-section > h1 {
-    font-size: 7.25rem;
+    font-size: 116px;
     margin-bottom: 450px;
   }
 
@@ -839,11 +834,11 @@ span {
   }
 
   .Skills {
-    padding: 0rem 2rem;
+    padding: 1rem 2rem;
   }
 
   .icon-text {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   #backBtn,
@@ -853,10 +848,6 @@ span {
 
   .projects {
     padding: 6rem 2rem 1rem 2rem;
-  }
-
-  .projects-grid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 
   .wave-two {
@@ -884,6 +875,106 @@ span {
   .nav-items a {
     display: none;
   }
+
+  .top-nav {
+    padding: 20px 0 0 0;
+  }
+
+  .oval-list-item {
+    margin-left: -300px;
+  }
+
+  .logo {
+    margin-left: 20px;
+  }
+
+  .menu-button {
+    margin-right: 50px;
+  }
+
+  .logo a {
+    font-size: 16px;
+  }
+
+  .me {
+    height: 250px;
+    width: calc(250px * 1);
+    margin: 0 auto;
+  }
+
+  @keyframes moveBorder {
+    0% {
+      box-shadow: 5px 5px 0px #ffb6c1;
+    }
+    100% {
+      box-shadow: 10px 10px 0px #ffb6c1;
+    }
+  }
+
+  .text-wrapper {
+    margin-left: 550px;
+    white-space: nowrap;
+  }
+
+  .hello-section > h1 {
+    font-size: 116px;
+    margin-bottom: 450px;
+  }
+
+  .who-i-am {
+    font-size: 24px;
+  }
+
+  #describe-me > h2 {
+    font-size: 24px;
+  }
+
+  .name-section,
+  #describe-me {
+    transform: translateY(-252px);
+  }
+
+  .scroll {
+    left: 50%;
+    margin-left: unset;
+    margin-bottom: unset;
+  }
+
+  .Skills {
+    padding: 2rem 2rem;
+  }
+
+  .icon-text {
+    font-size: 14px;
+  }
+
+  #backBtn,
+  #nextBtn {
+    font-size: 40px;
+  }
+
+  .projects {
+    padding: 6rem 2rem 1rem 2rem;
+  }
+
+  /* .wave-two {
+    margin-bottom: 269px;
+  } */
+
+  /* #contact-header > h6 {
+    font-size: 35px;
+  } */
+
+  #contact-p {
+    font-size: 13px;
+  }
+
+  .backtotop {
+    bottom: 1px;
+    right: 1px;
+    padding: 20px;
+    font-size: 25px;
+  }
 }
 
 /* Large Devices */
@@ -894,6 +985,93 @@ span {
   .grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .top-nav {
+    padding: 20px 0 0 0;
+  }
+
+  .oval-list-item {
+    margin-left: -300px;
+  }
+
+  .logo {
+    margin-left: 20px;
+  }
+
+  .menu-button {
+    margin-right: 50px;
+  }
+
+  .logo a {
+    font-size: 16px;
+  }
+
+  .me {
+    height: 250px;
+    width: calc(250px * 1);
+    margin: 0 auto;
+  }
+
+  @keyframes moveBorder {
+    0% {
+      box-shadow: 5px 5px 0px #ffb6c1;
+    }
+    100% {
+      box-shadow: 10px 10px 0px #ffb6c1;
+    }
+  }
+
+  .text-wrapper {
+    margin-left: 550px;
+    white-space: nowrap;
+  }
+
+  .hello-section > h1 {
+    font-size: 116px;
+    margin-bottom: 450px;
+  }
+
+  .who-i-am {
+    font-size: 24px;
+  }
+
+  #describe-me > h2 {
+    font-size: 24px;
+  }
+
+  .name-section,
+  #describe-me {
+    transform: translateY(-252px);
+  }
+
+  .scroll {
+    left: 50%;
+    margin-left: unset;
+    margin-bottom: unset;
+  }
+
+  .Skills {
+    padding: 3rem 2rem;
+  }
+
+  .icon-text {
+    font-size: 16px;
+  }
+
+  .projects {
+    padding: 6rem 2rem 2rem 2rem;
+  }
+
+  /* .wave-two {
+    margin-bottom: 269px;
+  } */
+
+  .backtotop {
+    bottom: 1px;
+    right: 1px;
+    padding: 20px;
+    font-size: 25px;
+  }
 }
 
 /* Extra Large Devices */
@@ -903,6 +1081,89 @@ span {
   }
   .grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .top-nav {
+    padding: 20px 0 0 0;
+  }
+
+  .oval-list-item {
+    margin-left: -300px;
+  }
+
+  .logo {
+    margin-left: 20px;
+  }
+
+  .menu-button {
+    margin-right: 50px;
+  }
+
+  .logo a {
+    font-size: 16px;
+  }
+
+  .me {
+    height: 250px;
+    width: calc(250px * 1);
+    margin: 0 auto;
+  }
+
+  @keyframes moveBorder {
+    0% {
+      box-shadow: 5px 5px 0px #ffb6c1;
+    }
+    100% {
+      box-shadow: 10px 10px 0px #ffb6c1;
+    }
+  }
+
+  .text-wrapper {
+    margin-left: 550px;
+    white-space: nowrap;
+  }
+
+  .hello-section > h1 {
+    font-size: 116px;
+    margin-bottom: 450px;
+  }
+
+  .who-i-am {
+    font-size: 24px;
+  }
+
+  #describe-me > h2 {
+    font-size: 24px;
+  }
+
+  .name-section,
+  #describe-me {
+    transform: translateY(-252px);
+  }
+
+  .scroll {
+    left: 50%;
+    margin-left: unset;
+    margin-bottom: unset;
+  }
+
+  .Skills {
+    padding: 3.5rem 2rem;
+  }
+
+  .projects {
+    padding: 6rem 2rem 2rem 2rem;
+  }
+
+  /* .wave-two {
+    margin-bottom: 269px;
+  } */
+
+  .backtotop {
+    bottom: 1px;
+    right: 1px;
+    padding: 20px;
+    font-size: 25px;
   }
 }
 
@@ -915,6 +1176,91 @@ span {
   .grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  /* .top-nav {
+    padding: 20px 0 0 0;
+  }
+
+  .oval-list-item {
+    margin-left: -300px;
+  }
+
+  .logo {
+    margin-left: 20px;
+  }
+
+  .menu-button {
+    margin-right: 50px;
+  }
+
+  .logo a {
+    font-size: 16px;
+  }
+
+  .me {
+    height: 250px;
+    width: calc(250px * 1);
+    margin: 0 auto;
+  }
+
+  @keyframes moveBorder {
+    0% {
+      box-shadow: 5px 5px 0px #ffb6c1;
+    }
+    100% {
+      box-shadow: 10px 10px 0px #ffb6c1;
+    }
+  }
+
+  .text-wrapper {
+    margin-left: 550px;
+    white-space: nowrap;
+  }
+
+  .hello-section > h1 {
+    font-size: 116px;
+    margin-bottom: 450px;
+  }
+
+  .who-i-am {
+    font-size: 24px;
+  }
+
+  #describe-me > h2 {
+    font-size: 24px;
+  }
+
+  .name-section,
+  #describe-me {
+    transform: translateY(-252px);
+  }
+
+  .scroll {
+    left: 50%;
+    margin-left: unset;
+    margin-bottom: unset;
+  } */
+
+  
+
+
+
+  
+
+  .projects {
+    padding: 6rem 2rem 2rem 2rem;
+  }
+
+  /* .wave-two {
+    margin-bottom: 269px;
+  } */
+
+  .backtotop {
+    bottom: 1px;
+    right: 1px;
+    padding: 20px;
+    font-size: 25px;
+  }
 }
 
 /* Beyond Extra Extra Large Devices */
@@ -925,6 +1271,78 @@ span {
   .grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  /* .top-nav {
+    padding: 20px 0 0 0;
+  } */
+
+  /* .oval-list-item {
+    margin-left: -300px;
+  } */
+
+  /* .logo {
+    margin-left: 20px;
+  } */
+
+  /* .menu-button {
+    margin-right: 50px;
+  } */
+
+  /* .logo a {
+    font-size: 16px;
+  } */
+
+  /* .me {
+    height: 250px;
+    width: calc(250px * 1);
+    margin: 0 auto;
+  } */
+
+  /* @keyframes moveBorder {
+    0% {
+      box-shadow: 5px 5px 0px #ffb6c1;
+    }
+    100% {
+      box-shadow: 10px 10px 0px #ffb6c1;
+    }
+  } */
+
+  /* .text-wrapper {
+    margin-left: 550px;
+    white-space: nowrap;
+  } */
+
+  /* .hello-section > h1 {
+    font-size: 116px;
+    margin-bottom: 450px;
+  } */
+
+  /* .who-i-am {
+    font-size: 24px;
+  } */
+
+  /* #describe-me > h2 {
+    font-size: 24px;
+  } */
+
+  /* .name-section,
+  #describe-me {
+    transform: translateY(-252px);
+  } */
+
+  /* .scroll {
+    left: 50%;
+    margin-left: unset;
+    margin-bottom: unset;
+  } */
+
+  .projects {
+    padding: 6rem 2rem 2rem 2rem;
+  }
+
+  /* .wave-two {
+    margin-bottom: 269px;
+  } */
 }
 
 .welcome-section h1,
