@@ -22,15 +22,17 @@ body {
 }
 
 .top-nav {
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   background-color: #1c232e;
-  color: #fff;
+  color: #f9f9f9;
   height: 80px;
   padding: 20px 176px 0 176px;
   z-index: 999;
+  
 }
 
 .logo i {
@@ -131,7 +133,7 @@ a {
 .menu-button::before,
 .menu-button::after {
   display: block;
-  background-color: #fff;
+  background-color: #f9f9f9;
   position: absolute;
   height: 2px;
   width: 30px;
