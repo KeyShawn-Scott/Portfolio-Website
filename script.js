@@ -76,10 +76,10 @@ window.onload = function () {
   }
 };
 
-applyAnimation(document.getElementById("About"));
-applyAnimation(document.getElementById("welcome-section"));
-applyAnimation(document.getElementById("Skills"));
-applyAnimation(document.getElementById("projects"));
+applyAnimation(document.querySelector(".about-section"));
+applyAnimation(document.querySelector(".welcome-section"));
+applyAnimation(document.querySelector(".skills-section"));
+applyAnimation(document.querySelector(".projects-section"));
 
 // Section 5: Remove Center when hamburger menu is clicked
 

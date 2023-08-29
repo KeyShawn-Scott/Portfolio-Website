@@ -22,7 +22,7 @@ body {
 }
 
 .top-nav {
-  position: relative;
+  /* position: relative; */
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -32,7 +32,6 @@ body {
   height: 80px;
   padding: 20px 176px 0 176px;
   z-index: 999;
-  
 }
 
 .logo i {
@@ -224,7 +223,7 @@ a {
   font-weight: 600;
 }
 
-#welcome-section {
+.welcome-section {
   height: 100vh;
   display: flex;
   align-items: center;
@@ -386,7 +385,7 @@ span {
   list-style: none;
 }
 
-.About {
+.about-section {
   /* background-color: #ffe4e1; */
   top: 0;
   left: 0;
@@ -422,7 +421,7 @@ span {
   font-weight: 410;
 }
 
-.Skills {
+.skills-section {
   background-color: #1c232e;
   margin: 0;
   padding: 4rem 2rem;
@@ -439,7 +438,7 @@ span {
   text-align: center;
 }
 
-.Skills i {
+.skills-section i {
   width: 8vw;
   font-size: auto;
 }
@@ -498,13 +497,13 @@ span {
   color: #ffd700;
 }
 
-.projects {
+.projects-section {
   padding: 8rem 2rem;
   text-align: center;
   background-color: #f9f9f9;
 }
 
-.projects > h5 {
+.projects-section > h5 {
   color: #1c232e;
   position: relative;
   font-size: 24px;
@@ -575,7 +574,7 @@ span {
   fill: #f9f9f9;
 }
 
-.contact {
+.contact-section {
   background-color: #1c232e;
   width: 100%;
   height: auto;
@@ -714,7 +713,7 @@ span {
     margin-bottom: unset;
   }
 
-  .Skills {
+  .skills-section {
     padding: 0rem 2rem;
   }
 
@@ -727,7 +726,7 @@ span {
     font-size: 40px;
   }
 
-  .projects {
+  .projects-section {
     padding: 6rem 2rem 1rem 2rem;
   }
 
@@ -735,7 +734,7 @@ span {
     margin-bottom: 269px;
   }
 
-  .contact {
+  .contact-section {
     background-color: #1c232e;
     width: 100%;
     height: auto;
@@ -835,7 +834,7 @@ span {
     margin-bottom: unset;
   }
 
-  .Skills {
+  .skills-section {
     padding: 1rem 2rem;
   }
 
@@ -848,7 +847,7 @@ span {
     font-size: 40px;
   }
 
-  .projects {
+  .projects-section {
     padding: 6rem 2rem 1rem 2rem;
   }
 
@@ -942,7 +941,7 @@ span {
     margin-bottom: unset;
   }
 
-  .Skills {
+  .skills-section {
     padding: 2rem 2rem;
   }
 
@@ -955,7 +954,7 @@ span {
     font-size: 40px;
   }
 
-  .projects {
+  .projects-section {
     padding: 6rem 2rem 1rem 2rem;
   }
 
@@ -1052,7 +1051,7 @@ span {
     margin-bottom: unset;
   }
 
-  .Skills {
+  .skills-section {
     padding: 3rem 2rem;
   }
 
@@ -1060,7 +1059,7 @@ span {
     font-size: 16px;
   }
 
-  .projects {
+  .projects-section {
     padding: 6rem 2rem 2rem 2rem;
   }
 
@@ -1149,11 +1148,11 @@ span {
     margin-bottom: unset;
   }
 
-  .Skills {
+  .skills-section {
     padding: 3.5rem 2rem;
   }
 
-  .projects {
+  .projects-section {
     padding: 6rem 2rem 2rem 2rem;
   }
 
@@ -1243,13 +1242,7 @@ span {
     margin-bottom: unset;
   } */
 
-  
-
-
-
-  
-
-  .projects {
+  .projects-section {
     padding: 6rem 2rem 2rem 2rem;
   }
 
@@ -1338,7 +1331,7 @@ span {
     margin-bottom: unset;
   } */
 
-  .projects {
+  .projects-section {
     padding: 6rem 2rem 2rem 2rem;
   }
 
@@ -1351,12 +1344,12 @@ span {
 .welcome-section p.who-i-am,
 .welcome-section div.container,
 .welcome-section h2,
-.About h3,
-.About p.aboutmetext,
-.About ul li h4,
-.About ul li p,
-.Skills div.icons-animating,
-.projects {
+.about-section h3,
+.about-section p.aboutmetext,
+.about-section ul li h4,
+.about-section ul li p,
+.skills-section div.icons-animating,
+.projects-section {
   opacity: 0;
   transform: translateY(50px);
   transition: opacity 1s, transform 1s;
@@ -1366,12 +1359,12 @@ span {
 .welcome-section.show p.who-i-am,
 .welcome-section.show div.container,
 .welcome-section.show h2,
-.About.show h3,
-.About.show p.aboutmetext,
-.About.show ul li h4,
-.About.show ul li p,
-.Skills.show div.icons-animating,
-.projects.show {
+.about-section.show h3,
+.about-section.show p.aboutmetext,
+.about-section.show ul li h4,
+.about-section.show ul li p,
+.skills-section.show div.icons-animating,
+.projects-section.show {
   opacity: 1;
   transform: translateY(0);
 }
