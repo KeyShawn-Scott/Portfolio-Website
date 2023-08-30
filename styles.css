@@ -17,9 +17,14 @@ body {
   margin: 0;
   width: 100%;
   height: 100%;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
   user-select: none;
 }
+
+/* .container {
+ min-width: 1440px; 
+
+} */
 
 .top-nav {
   /* position: relative; */
@@ -262,7 +267,7 @@ a {
   font-size: 12rem;
   font-weight: 900;
   letter-spacing: -0.02em;
-  position: relative;
+  /* position: relative; */
   margin-top: -80px;
   margin-right: 550px;
 }
@@ -987,7 +992,7 @@ span {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .top-nav {
+  /* .top-nav {
     padding: 20px 0 0 0;
   }
 
@@ -1049,7 +1054,7 @@ span {
     left: 50%;
     margin-left: unset;
     margin-bottom: unset;
-  }
+  } */
 
   .skills-section {
     padding: 3rem 2rem;
@@ -1084,7 +1089,7 @@ span {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .top-nav {
+  /* .top-nav {
     padding: 20px 0 0 0;
   }
 
@@ -1146,7 +1151,7 @@ span {
     left: 50%;
     margin-left: unset;
     margin-bottom: unset;
-  }
+  } */
 
   .skills-section {
     padding: 3.5rem 2rem;
