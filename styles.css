@@ -21,22 +21,24 @@ body {
   user-select: none;
 }
 
-/* .container {
- min-width: 1440px; 
-
-} */
-
 .top-nav {
-  /* position: relative; */
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   background-color: #1c232e;
   color: #f9f9f9;
-  height: 80px;
-  padding: 20px 176px 0 176px;
+  height: 100px;
   z-index: 999;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: min(1100px, 95%);
+  margin: auto;
 }
 
 .logo i {
@@ -239,13 +241,14 @@ a {
 
 .image-container {
   position: absolute;
+  margin-bottom: 100px;
 }
 
 .me {
-  height: 400px;
+  height: 415px;
+  width: calc(415px * 1);
   object-fit: cover;
   border-radius: 50%;
-  width: calc(400px * 1);
   margin-left: 600px;
   margin-bottom: 150px;
   border: 12px solid transparent;
@@ -262,35 +265,39 @@ a {
   }
 }
 
-.hello-section > h1 {
+.text-wrapper {
+  width: min(1100px, 95%);
+  white-space: nowrap;
+}
+
+#hello-word {
   color: #373d47;
-  font-size: 12rem;
+  font-size: 210px;
   font-weight: 900;
   letter-spacing: -0.02em;
-  /* position: relative; */
-  margin-top: -80px;
   margin-right: 550px;
+  position: absolute;
+  top: 0;
+}
+
+.name-section {
+  margin-bottom: 200px;
 }
 
 .who-i-am {
   color: #f9f9f9;
   font-size: 38px;
   font-weight: bold;
-  position: absolute;
-  margin-top: -255px;
-}
-
-#describe-me {
-  height: 100vh;
-  color: #f9f9f9;
-  margin-right: 500px;
-  margin-top: -230px;
+  margin: 0;
   position: absolute;
 }
 
-#describe-me > h2 {
-  font-size: 38px;
-  font-weight: bold;
+.who-i-am:first-child {
+  margin-top: -44px;
+}
+
+.who-i-am:last-child {
+  margin-top: 5px;
 }
 
 span {
@@ -300,13 +307,11 @@ span {
 .scroll {
   position: absolute;
   bottom: 0;
-  transform: translateX(-50%);
+  transform: translateX(-49%) translateY(-50%);
   display: flex;
   flex-direction: column;
   align-items: center;
-  left: 1px;
-  margin-left: 180px;
-  margin-bottom: 30px;
+  width: min(1100px, 95%);
 }
 
 .scroll-text {
@@ -391,7 +396,7 @@ span {
 }
 
 .about-section {
-  /* background-color: #ffe4e1; */
+  position: relative;
   top: 0;
   left: 0;
   background-image: url("images/about-background-final-version.png");
@@ -399,6 +404,7 @@ span {
   background-position: center;
   text-align: center;
   padding: 4rem 10vw;
+  z-index: 50;
 }
 
 #about-header {
@@ -528,6 +534,7 @@ span {
 .project-tile {
   border-radius: 0 0 30px 30px;
   color: #1c232e;
+  white-space: nowrap;
   width: 100%;
   background-image: linear-gradient(#ffe4e1, #ffb6c1);
   margin-top: -4px;
@@ -649,25 +656,21 @@ span {
 
 /* Media Queries */
 /* X-Small Devices */
-@media (max-width: 320px) {
+@media (max-width: 500px) {
   .nav-items a {
     display: none;
   }
 
-  .top-nav {
-    padding: 20px 0 0 0;
-  }
-
   .oval-list-item {
-    margin-left: -300px;
+    margin-left: -280px;
   }
 
   .logo {
-    margin-left: 20px;
+    margin-left: 5px;
   }
 
   .menu-button {
-    margin-right: 50px;
+    margin-right: 20px;
   }
 
   .logo a {
@@ -678,6 +681,8 @@ span {
     height: 250px;
     width: calc(250px * 1);
     margin: 0 auto;
+    box-shadow: 5px 5px 0px #ffb6c1;
+    margin-bottom: -50px;
   }
 
   @keyframes moveBorder {
@@ -690,32 +695,35 @@ span {
   }
 
   .text-wrapper {
-    margin-left: 550px;
-    white-space: nowrap;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin-right: 300px;
   }
 
-  .hello-section > h1 {
+  #hello-word {
     font-size: 116px;
-    margin-bottom: 450px;
   }
 
   .who-i-am {
     font-size: 24px;
   }
 
-  #describe-me > h2 {
-    font-size: 24px;
+  .who-i-am:first-child {
+    margin-top: -30px;
   }
 
-  .name-section,
-  #describe-me {
-    transform: translateY(-252px);
+  .who-i-am:last-child {
+    margin-top: 0px;
+  }
+
+  .name-section {
+    transform: translateY(-164px);
   }
 
   .scroll {
     left: 50%;
-    margin-left: unset;
-    margin-bottom: unset;
+    margin-bottom: -30px;
   }
 
   .skills-section {
@@ -736,7 +744,7 @@ span {
   }
 
   .wave-two {
-    margin-bottom: 269px;
+    margin-bottom: 267px;
   }
 
   .contact-section {
@@ -770,25 +778,21 @@ span {
 }
 
 /* Small Devices */
-@media (min-width: 321px) and (max-width: 575px) {
+@media (min-width: 501px) and (max-width: 575px) {
   .nav-items a {
     display: none;
   }
 
-  .top-nav {
-    padding: 20px 0 0 0;
-  }
-
   .oval-list-item {
-    margin-left: -300px;
+    margin-left: -280px;
   }
 
   .logo {
-    margin-left: 20px;
+    margin-left: 5px;
   }
 
   .menu-button {
-    margin-right: 50px;
+    margin-right: 20px;
   }
 
   .logo a {
@@ -796,47 +800,42 @@ span {
   }
 
   .me {
-    height: 300px;
-    width: calc(300px * 1);
+    height: 350px;
+    width: calc(350px * 1);
     margin: 0 auto;
-  }
-
-  @keyframes moveBorder {
-    0% {
-      box-shadow: 5px 5px 0px #ffb6c1;
-    }
-    100% {
-      box-shadow: 10px 10px 0px #ffb6c1;
-    }
+    margin-bottom: -50px;
   }
 
   .text-wrapper {
-    margin-left: 550px;
-    white-space: nowrap;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin-right: 300px;
   }
 
-  .hello-section > h1 {
-    font-size: 116px;
-    margin-bottom: 450px;
+  #hello-word {
+    font-size: 122px;
   }
 
   .who-i-am {
-    font-size: 24px;
+    font-size: 30px;
   }
 
-  #describe-me > h2 {
-    font-size: 24px;
+  .who-i-am:first-child {
+    margin-top: -30px;
   }
 
-  .name-section,
-  #describe-me {
-    transform: translateY(-252px);
+  .who-i-am:last-child {
+    margin-top: 5px;
+  }
+
+  .name-section {
+    transform: translateY(-158px);
   }
 
   .scroll {
     left: 50%;
-    margin-left: unset;
-    margin-bottom: unset;
+    margin-bottom: -60px;
   }
 
   .skills-section {
@@ -882,20 +881,16 @@ span {
     display: none;
   }
 
-  .top-nav {
-    padding: 20px 0 0 0;
-  }
-
   .oval-list-item {
-    margin-left: -300px;
+    margin-left: -280px;
   }
 
   .logo {
-    margin-left: 20px;
+    margin-left: 5px;
   }
 
   .menu-button {
-    margin-right: 50px;
+    margin-right: 20px;
   }
 
   .logo a {
@@ -903,47 +898,42 @@ span {
   }
 
   .me {
-    height: 250px;
-    width: calc(250px * 1);
+    height: 350px;
+    width: calc(350px * 1);
     margin: 0 auto;
-  }
-
-  @keyframes moveBorder {
-    0% {
-      box-shadow: 5px 5px 0px #ffb6c1;
-    }
-    100% {
-      box-shadow: 10px 10px 0px #ffb6c1;
-    }
+    margin-bottom: -50px;
   }
 
   .text-wrapper {
-    margin-left: 550px;
-    white-space: nowrap;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin-right: 300px;
   }
 
-  .hello-section > h1 {
-    font-size: 116px;
-    margin-bottom: 450px;
+  #hello-word {
+    font-size: 122px;
   }
 
   .who-i-am {
-    font-size: 24px;
+    font-size: 30px;
   }
 
-  #describe-me > h2 {
-    font-size: 24px;
+  .who-i-am:first-child {
+    margin-top: -30px;
   }
 
-  .name-section,
-  #describe-me {
-    transform: translateY(-252px);
+  .who-i-am:last-child {
+    margin-top: 5px;
+  }
+
+  .name-section {
+    transform: translateY(-158px);
   }
 
   .scroll {
     left: 50%;
-    margin-left: unset;
-    margin-bottom: unset;
+    margin-bottom: -60px;
   }
 
   .skills-section {
@@ -962,14 +952,6 @@ span {
   .projects-section {
     padding: 6rem 2rem 1rem 2rem;
   }
-
-  /* .wave-two {
-    margin-bottom: 269px;
-  } */
-
-  /* #contact-header > h6 {
-    font-size: 35px;
-  } */
 
   #contact-p {
     font-size: 13px;
@@ -992,69 +974,35 @@ span {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  /* .top-nav {
-    padding: 20px 0 0 0;
-  }
-
-  .oval-list-item {
-    margin-left: -300px;
-  }
-
-  .logo {
-    margin-left: 20px;
-  }
-
-  .menu-button {
-    margin-right: 50px;
-  }
-
-  .logo a {
-    font-size: 16px;
+  .image-container {
+    width: min(1000px, 95%);
   }
 
   .me {
-    height: 250px;
-    width: calc(250px * 1);
-    margin: 0 auto;
+    height: 400px;
+    width: calc(400px * 1);
+    margin-left: 510px;
   }
 
-  @keyframes moveBorder {
-    0% {
-      box-shadow: 5px 5px 0px #ffb6c1;
-    }
-    100% {
-      box-shadow: 10px 10px 0px #ffb6c1;
-    }
-  }
-
-  .text-wrapper {
-    margin-left: 550px;
-    white-space: nowrap;
-  }
-
-  .hello-section > h1 {
-    font-size: 116px;
-    margin-bottom: 450px;
+  #hello-word {
+    font-size: 190px;
   }
 
   .who-i-am {
-    font-size: 24px;
+    font-size: 30px;
   }
 
-  #describe-me > h2 {
-    font-size: 24px;
+  .who-i-am:first-child {
+    margin-top: -30px;
   }
 
-  .name-section,
-  #describe-me {
-    transform: translateY(-252px);
+  .who-i-am:last-child {
+    margin-top: 12px;
   }
 
-  .scroll {
-    left: 50%;
-    margin-left: unset;
-    margin-bottom: unset;
-  } */
+  .name-section {
+    transform: translateY(-243px);
+  }
 
   .skills-section {
     padding: 3rem 2rem;
@@ -1067,10 +1015,6 @@ span {
   .projects-section {
     padding: 6rem 2rem 2rem 2rem;
   }
-
-  /* .wave-two {
-    margin-bottom: 269px;
-  } */
 
   .backtotop {
     bottom: 1px;
@@ -1089,69 +1033,9 @@ span {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  /* .top-nav {
-    padding: 20px 0 0 0;
+  .name-section {
+    transform: translateY(-200px);
   }
-
-  .oval-list-item {
-    margin-left: -300px;
-  }
-
-  .logo {
-    margin-left: 20px;
-  }
-
-  .menu-button {
-    margin-right: 50px;
-  }
-
-  .logo a {
-    font-size: 16px;
-  }
-
-  .me {
-    height: 250px;
-    width: calc(250px * 1);
-    margin: 0 auto;
-  }
-
-  @keyframes moveBorder {
-    0% {
-      box-shadow: 5px 5px 0px #ffb6c1;
-    }
-    100% {
-      box-shadow: 10px 10px 0px #ffb6c1;
-    }
-  }
-
-  .text-wrapper {
-    margin-left: 550px;
-    white-space: nowrap;
-  }
-
-  .hello-section > h1 {
-    font-size: 116px;
-    margin-bottom: 450px;
-  }
-
-  .who-i-am {
-    font-size: 24px;
-  }
-
-  #describe-me > h2 {
-    font-size: 24px;
-  }
-
-  .name-section,
-  #describe-me {
-    transform: translateY(-252px);
-  }
-
-  .scroll {
-    left: 50%;
-    margin-left: unset;
-    margin-bottom: unset;
-  } */
 
   .skills-section {
     padding: 3.5rem 2rem;
@@ -1160,10 +1044,6 @@ span {
   .projects-section {
     padding: 6rem 2rem 2rem 2rem;
   }
-
-  /* .wave-two {
-    margin-bottom: 269px;
-  } */
 
   .backtotop {
     bottom: 1px;
@@ -1183,77 +1063,13 @@ span {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  /* .top-nav {
-    padding: 20px 0 0 0;
+  .name-section {
+    transform: translateY(-200px);
   }
-
-  .oval-list-item {
-    margin-left: -300px;
-  }
-
-  .logo {
-    margin-left: 20px;
-  }
-
-  .menu-button {
-    margin-right: 50px;
-  }
-
-  .logo a {
-    font-size: 16px;
-  }
-
-  .me {
-    height: 250px;
-    width: calc(250px * 1);
-    margin: 0 auto;
-  }
-
-  @keyframes moveBorder {
-    0% {
-      box-shadow: 5px 5px 0px #ffb6c1;
-    }
-    100% {
-      box-shadow: 10px 10px 0px #ffb6c1;
-    }
-  }
-
-  .text-wrapper {
-    margin-left: 550px;
-    white-space: nowrap;
-  }
-
-  .hello-section > h1 {
-    font-size: 116px;
-    margin-bottom: 450px;
-  }
-
-  .who-i-am {
-    font-size: 24px;
-  }
-
-  #describe-me > h2 {
-    font-size: 24px;
-  }
-
-  .name-section,
-  #describe-me {
-    transform: translateY(-252px);
-  }
-
-  .scroll {
-    left: 50%;
-    margin-left: unset;
-    margin-bottom: unset;
-  } */
 
   .projects-section {
     padding: 6rem 2rem 2rem 2rem;
   }
-
-  /* .wave-two {
-    margin-bottom: 269px;
-  } */
 
   .backtotop {
     bottom: 1px;
@@ -1272,77 +1088,13 @@ span {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  /* .top-nav {
-    padding: 20px 0 0 0;
-  } */
-
-  /* .oval-list-item {
-    margin-left: -300px;
-  } */
-
-  /* .logo {
-    margin-left: 20px;
-  } */
-
-  /* .menu-button {
-    margin-right: 50px;
-  } */
-
-  /* .logo a {
-    font-size: 16px;
-  } */
-
-  /* .me {
-    height: 250px;
-    width: calc(250px * 1);
-    margin: 0 auto;
-  } */
-
-  /* @keyframes moveBorder {
-    0% {
-      box-shadow: 5px 5px 0px #ffb6c1;
-    }
-    100% {
-      box-shadow: 10px 10px 0px #ffb6c1;
-    }
-  } */
-
-  /* .text-wrapper {
-    margin-left: 550px;
-    white-space: nowrap;
-  } */
-
-  /* .hello-section > h1 {
-    font-size: 116px;
-    margin-bottom: 450px;
-  } */
-
-  /* .who-i-am {
-    font-size: 24px;
-  } */
-
-  /* #describe-me > h2 {
-    font-size: 24px;
-  } */
-
-  /* .name-section,
-  #describe-me {
-    transform: translateY(-252px);
-  } */
-
-  /* .scroll {
-    left: 50%;
-    margin-left: unset;
-    margin-bottom: unset;
-  } */
+  .name-section {
+    transform: translateY(-200px);
+  }
 
   .projects-section {
     padding: 6rem 2rem 2rem 2rem;
   }
-
-  /* .wave-two {
-    margin-bottom: 269px;
-  } */
 }
 
 .welcome-section h1,

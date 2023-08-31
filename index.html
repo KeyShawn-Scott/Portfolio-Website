@@ -54,37 +54,40 @@
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
   </head>
   <body>
-    <div class="container">
-    <div class="top-nav">
-      <div class="logo">
-        <a href="#welcome-section"
-          ><i class="fa-solid fa-ice-cream"></i>
-          ksdev
-        </a>
+    <header class="top-nav">
+      <div class="nav-container">
+        <div class="logo">
+          <a href="#welcome-section"
+            ><i class="fa-solid fa-ice-cream"></i>
+            ksdev
+          </a>
+        </div>
+        <ul class="nav-items">
+          <li><a href="#welcome">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li class="oval-list-item">
+            <a class="oval" id="center" href="#contact">Contact</a>
+          </li>
+        </ul>
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-button-container" for="menu-toggle">
+          <div class="menu-button"></div>
+        </label>
+        <ul class="menu">
+          <li><a href="#welcome">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li>
+            <a class="hidden-oval" id="hidden-center" href="#contact"
+              >Contact</a
+            >
+          </li>
+        </ul>
       </div>
-      <ul class="nav-items">
-        <li><a href="#welcome">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li class="oval-list-item">
-          <a class="oval" id="center" href="#contact">Contact</a>
-        </li>
-      </ul>
-      <input id="menu-toggle" type="checkbox" />
-      <label class="menu-button-container" for="menu-toggle">
-        <div class="menu-button"></div>
-      </label>
-      <ul class="menu">
-        <li><a href="#welcome">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li>
-          <a class="hidden-oval" id="hidden-center" href="#contact">Contact</a>
-        </li>
-      </ul>
-    </div>
+    </header>
 
     <section class="welcome-section" id="welcome">
       <div class="image-container">
@@ -95,14 +98,14 @@
         />
       </div>
       <div class="text-wrapper">
-        <div class="hello-section">
-          <h1>Hello</h1>
-        </div>
-        <div class="name-section">
-          <p class="who-i-am">I'm KeyShawn Scott,</p>
-        </div>
-        <div id="describe-me">
-          <h2>A <span class="typing"></span></h2>
+        <div class="text-scaling">
+          <div class="hello-section">
+            <h1 id="hello-word">Hello</h1>
+          </div>
+          <div class="name-section">
+            <p class="who-i-am">I'm KeyShawn Scott,</p>
+            <p class="who-i-am">A <span class="typing"></span></p>
+          </div>
         </div>
       </div>
 
@@ -117,7 +120,6 @@
         </div>
       </div>
     </section>
-  </div>
 
     <section class="about-section" id="about">
       <div class="wave">
@@ -211,7 +213,7 @@
             alt="First Project Name"
             class="project-img"
           />
-          <p class="project-tile">First Project Name</p>
+          <p class="project-tile">MyCookbook</p>
         </a>
         <a href="" id="projects-box-shadow">
           <img
@@ -219,7 +221,7 @@
             alt="Second Project Name"
             class="project-img"
           />
-          <p class="project-tile">Second Project Name</p>
+          <p class="project-tile">Name TBD</p>
         </a>
         <a href="" id="projects-box-shadow">
           <img
@@ -227,7 +229,7 @@
             alt="Third Project Name"
             class="project-img"
           />
-          <p class="project-tile">Third Project Name</p>
+          <p class="project-tile">Name TBD</p>
         </a>
       </div>
     </section>
