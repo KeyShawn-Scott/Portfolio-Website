@@ -241,7 +241,7 @@ a {
 
 .image-container {
   position: absolute;
-  margin-bottom: 100px;
+  bottom: 50px;
 }
 
 .me {
@@ -277,11 +277,12 @@ a {
   letter-spacing: -0.02em;
   margin-right: 550px;
   position: absolute;
-  top: 0;
+  bottom: 120px;
 }
 
 .name-section {
-  margin-bottom: 200px;
+  position: absolute;
+  bottom: 95px;
 }
 
 .who-i-am {
@@ -289,15 +290,30 @@ a {
   font-size: 38px;
   font-weight: bold;
   margin: 0;
-  position: absolute;
 }
 
 .who-i-am:first-child {
-  margin-top: -44px;
+  margin-top: -50px;
 }
 
 .who-i-am:last-child {
   margin-top: 5px;
+}
+
+#underlined {
+  position: absolute;
+  margin-right: 1rem;
+}
+#underlined:after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0px;
+  height: 6px;
+  width: 100%;
+  border: solid 2px #ffb6c1;
+  border-color: #ffb6c1 transparent transparent transparent;
+  border-radius: 30%;
 }
 
 span {
@@ -682,7 +698,7 @@ span {
     width: calc(250px * 1);
     margin: 0 auto;
     box-shadow: 5px 5px 0px #ffb6c1;
-    margin-bottom: -50px;
+    transform: translateY(-120px);
   }
 
   @keyframes moveBorder {
@@ -703,6 +719,7 @@ span {
 
   #hello-word {
     font-size: 116px;
+    bottom: 400px;
   }
 
   .who-i-am {
@@ -718,7 +735,7 @@ span {
   }
 
   .name-section {
-    transform: translateY(-164px);
+    transform: translateY(-393px);
   }
 
   .scroll {
@@ -803,7 +820,7 @@ span {
     height: 350px;
     width: calc(350px * 1);
     margin: 0 auto;
-    margin-bottom: -50px;
+    transform: translateY(-60px);
   }
 
   .text-wrapper {
@@ -815,22 +832,23 @@ span {
 
   #hello-word {
     font-size: 122px;
+    bottom: 400px;
   }
 
   .who-i-am {
-    font-size: 30px;
+    font-size: 28px;
   }
 
   .who-i-am:first-child {
-    margin-top: -30px;
+    margin-top: -35px;
   }
 
   .who-i-am:last-child {
-    margin-top: 5px;
+    margin-top: 0px;
   }
 
   .name-section {
-    transform: translateY(-158px);
+    transform: translateY(-393px);
   }
 
   .scroll {
@@ -901,7 +919,7 @@ span {
     height: 350px;
     width: calc(350px * 1);
     margin: 0 auto;
-    margin-bottom: -50px;
+    transform: translateY(-60px);
   }
 
   .text-wrapper {
@@ -913,22 +931,23 @@ span {
 
   #hello-word {
     font-size: 122px;
+    bottom: 400px;
   }
 
   .who-i-am {
-    font-size: 30px;
+    font-size: 28px;
   }
 
   .who-i-am:first-child {
-    margin-top: -30px;
+    margin-top: -35px;
   }
 
   .who-i-am:last-child {
-    margin-top: 5px;
+    margin-top: 0px;
   }
 
   .name-section {
-    transform: translateY(-158px);
+    transform: translateY(-393px);
   }
 
   .scroll {
@@ -993,15 +1012,15 @@ span {
   }
 
   .who-i-am:first-child {
-    margin-top: -30px;
+    margin-top: -45px;
   }
 
   .who-i-am:last-child {
-    margin-top: 12px;
+    margin-top: 0px;
   }
 
   .name-section {
-    transform: translateY(-243px);
+    transform: translateY(-187px);
   }
 
   .skills-section {
@@ -1031,6 +1050,14 @@ span {
   }
   .grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .who-i-am:first-child {
+    margin-top: -55px;
+  }
+
+  .who-i-am:last-child {
+    margin-top: 0px;
   }
 
   .name-section {

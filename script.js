@@ -38,8 +38,20 @@ backBtn.addEventListener("click", () => {
 });
 
 // Check for specific media query conditions and adjust the scroll amount
-if (window.matchMedia("(max-width: 320px)").matches) {
-  scrollAmount = 65; // Adjusted scroll amount for max-width: 320px
+if (window.matchMedia("(max-width: 500px)").matches) {
+  scrollAmount = 65;
+}
+if (window.matchMedia("(min-width: 501px) and (max-width: 575px)").matches) {
+  scrollAmount = 95;
+}
+if (window.matchMedia("(min-width: 576px) and (max-width: 767px)").matches) {
+  scrollAmount = 105;
+}
+if (window.matchMedia("(min-width: 768px) and (max-width: 991px)").matches) {
+  scrollAmount = 115;
+}
+if (window.matchMedia("(min-width: 992px) and (max-width: 1199px)").matches) {
+  scrollAmount = 160;
 }
 
 // Section 3 - Reusable function to apply the animation classes
@@ -75,7 +87,6 @@ window.onload = function () {
     localStorage.removeItem("scrollPosition");
   }
 };
-
 
 applyAnimation(document.getElementById("welcome"));
 applyAnimation(document.getElementById("about"));
