@@ -1412,6 +1412,28 @@ span {
   }
 }
 
+/* iPhone 8 */
+@media (width: 375px) and (height: 667px) and (-webkit-device-pixel-ratio: 2) {
+  .me {
+    height: 300px;
+    width: calc(300px * 1);
+    transform: translateY(-70px);
+  }
+
+  #hello-word {
+    bottom: 340px;
+  }
+
+  .name-section {
+    transform: translateY(-340px);
+  }
+
+  .scroll {
+    bottom: -30px;
+  }
+}
+
+
 .welcome-section h1,
 .welcome-section p.who-i-am,
 .welcome-section div.container,
