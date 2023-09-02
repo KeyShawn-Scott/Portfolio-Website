@@ -1124,6 +1124,294 @@ span {
   }
 }
 
+/* SPECIFIC DEVICES */
+/* iPad Air iPadOS 14.7.1 */
+@media (width: 820px) and (height: 1180px) {
+  .welcome-section {
+    height: 55vh;
+  }
+
+  .me {
+    transform: translateY(-400px);
+  }
+
+  #hello-word {
+    bottom: 620px;
+  }
+
+  .name-section {
+    transform: translateY(-690px);
+  }
+
+  .scroll {
+    bottom: 500px;
+  }
+
+  .about-section {
+    padding: 4rem 2vw;
+  }
+}
+
+/* iPad iPadOS 14.7.1 */
+@media (width: 810px) and (height: 1080px) {
+  .welcome-section {
+    height: 60vh;
+  }
+
+  .me {
+    transform: translateY(-300px);
+  }
+
+  #hello-word {
+    bottom: 520px;
+  }
+
+  .name-section {
+    transform: translateY(-590px);
+  }
+
+  .scroll {
+    bottom: 400px;
+  }
+
+  .about-section {
+    padding: 4rem 2vw;
+  }
+}
+
+/* iPad Mini iPadOS 14.7.1 */
+@media (width: 768px) and (height: 1024px) {
+  .welcome-section {
+    height: 60vh;
+  }
+
+  .me {
+    transform: translateY(-300px);
+  }
+
+  #hello-word {
+    bottom: 520px;
+  }
+
+  .name-section {
+    transform: translateY(-590px);
+  }
+
+  .scroll {
+    bottom: 400px;
+  }
+
+  .about-section {
+    padding: 4rem 2vw;
+  }
+}
+
+/* iPad Pro (11-inch) iPadOS 14.7.1 */
+@media (width: 834px) and (height: 1194px) {
+  .welcome-section {
+    height: 53vh;
+  }
+
+  .me {
+    transform: translateY(-450px);
+  }
+
+  #hello-word {
+    bottom: 650px;
+  }
+
+  .name-section {
+    transform: translateY(-720px);
+  }
+
+  .scroll {
+    bottom: 510px;
+  }
+
+  .about-section {
+    padding: 4rem 2vw;
+  }
+}
+
+/* iPad Pro (12.9-inch) iPadOS 14.7.1 */
+@media (width: 1024px) and (height: 1366px) {
+  .welcome-section {
+    height: 55vh;
+  }
+
+  .me {
+    transform: translateY(-600px);
+  }
+
+  #hello-word {
+    bottom: 750px;
+  }
+
+  .name-section {
+    transform: translateY(-830px);
+  }
+
+  .scroll {
+    bottom: 600px;
+  }
+
+  .about-section {
+    padding: 4rem 2vw;
+  }
+}
+
+/* iPhone 11 Pro iOS 14.6 AND iPhone 12/13 mini iOS 14.6 AND iPhone X/XS iOS 12*/
+@media (width: 375px) and (height: 812px) {
+  .me {
+    height: 340px;
+    width: calc(340px * 1);
+  }
+
+  #hello-word {
+    bottom: 470px;
+  }
+
+  .name-section {
+    transform: translateY(-470px);
+  }
+}
+
+/* iPhone 11 Pro Max iOS 14.6 AND iPhone XR/11 iOS 12 AND iPhone XS Max iOS 12*/
+@media (width: 414px) and (height: 896px) {
+  .welcome-section {
+    height: 90vh;
+  }
+
+  .me {
+    height: 340px;
+    width: calc(340px * 1);
+    transform: translateY(-200px);
+  }
+
+  #hello-word {
+    bottom: 550px;
+  }
+
+  .name-section {
+    transform: translateY(-550px);
+  }
+
+  .scroll {
+    bottom: 100px;
+  }
+}
+
+/* iPhone 12/13 + Pro iOS 14.6 */
+@media (width: 390px) and (height: 844px) {
+  .welcome-section {
+    height: 90vh;
+  }
+
+  .me {
+    height: 340px;
+    width: calc(340px * 1);
+    transform: translateY(-200px);
+  }
+
+  #hello-word {
+    bottom: 510px;
+  }
+
+  .name-section {
+    transform: translateY(-510px);
+  }
+
+  .scroll {
+    bottom: 100px;
+  }
+}
+
+/* iPhone 12/13 Pro Max iOS 14.6 */
+@media (width: 428px) and (height: 926px) {
+  .welcome-section {
+    height: 90vh;
+  }
+
+  .me {
+    height: 340px;
+    width: calc(340px * 1);
+    transform: translateY(-200px);
+  }
+
+  #hello-word {
+    bottom: 560px;
+  }
+
+  .name-section {
+    transform: translateY(-560px);
+  }
+
+  .scroll {
+    bottom: 100px;
+  }
+}
+
+/* iPhone 5/SE iOS 10.3.1 */
+@media (width: 320px) and (height: 568px) {
+  .welcome-section {
+    height: 110vh;
+  }
+
+  .me {
+    transform: translateY(-10px);
+  }
+
+  #hello-word {
+    bottom: 250px;
+  }
+
+  .name-section {
+    transform: translateY(-250px);
+  }
+
+  .scroll {
+    bottom: -100px;
+  }
+}
+
+/* iPhone 6/7/8  iOS 11 AND iPhone SE 2nd gen iOS 14.6*/
+@media (width: 375px) and (height: 667px) {
+  .me {
+    height: 300px;
+    width: calc(300px * 1);
+    transform: translateY(-70px);
+  }
+
+  #hello-word {
+    bottom: 340px;
+  }
+
+  .name-section {
+    transform: translateY(-340px);
+  }
+
+  .scroll {
+    bottom: -30px;
+  }
+}
+
+/* iPhone 6/7/8 Plus iOS 11 */
+@media (width: 414px) and (height: 736px) {
+  .me {
+    height: 300px;
+    width: calc(300px * 1);
+    transform: translateY(-100px);
+  }
+
+  #hello-word {
+    bottom: 400px;
+  }
+
+  .name-section {
+    transform: translateY(-400px);
+  }
+}
+
 .welcome-section h1,
 .welcome-section p.who-i-am,
 .welcome-section div.container,
