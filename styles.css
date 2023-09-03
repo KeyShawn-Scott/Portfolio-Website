@@ -30,7 +30,8 @@ body {
   background-color: #1c232e;
   color: #f9f9f9;
   height: 100px;
-  z-index: 999;
+  /* z-index: 999; */
+  padding: 1px; 
 }
 
 .nav-container {
@@ -268,8 +269,6 @@ a {
 .text-wrapper {
   width: min(1100px, 95%);
   white-space: nowrap;
-  border: 3px dotted red; 
-  padding-top: 40rem;
 }
 
 #hello-word {
