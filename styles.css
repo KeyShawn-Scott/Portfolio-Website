@@ -1377,10 +1377,6 @@ span {
 
 /* iPhone 6/7/8  iOS 11 AND iPhone SE 2nd gen iOS 14.6*/
 @media (width: 375px) and (height: 667px) {
-  .top-nav {
-    height: 60px; 
-  }
-  
   .me {
     height: 300px;
     width: calc(300px * 1);
