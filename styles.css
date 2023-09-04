@@ -31,7 +31,7 @@ body {
   color: #f9f9f9;
   height: 100px;
   z-index: 999;
-  padding: 1px; 
+  padding: 1px;
 }
 
 .nav-container {
@@ -1377,8 +1377,6 @@ span {
 
 /* iPhone 6/7/8  iOS 11 AND iPhone SE 2nd gen iOS 14.6*/
 
-
-
 @media (width: 375px) and (height: 667px) {
   .me {
     height: 300px;
@@ -1414,7 +1412,6 @@ span {
   .name-section {
     transform: translateY(-400px);
   }
-}
 }
 
 .welcome-section h1,
