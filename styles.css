@@ -1378,23 +1378,25 @@ span {
 /* iPhone 6/7/8  iOS 11 AND iPhone SE 2nd gen iOS 14.6*/
 
 @-moz-document url-prefix() {
-  @media (width: 375px) and (height: 667px) {
-    .me {
-      height: 300px;
-      width: calc(300px * 1);
-      transform: translateY(-70px);
-    }
+  @supports (animation: calc(0s)) {
+    @media (width: 375px) and (height: 667px) {
+      .me {
+        height: 300px;
+        width: calc(300px * 1);
+        transform: translateY(-70px);
+      }
 
-    #hello-word {
-      bottom: 340px;
-    }
+      #hello-word {
+        bottom: 340px;
+      }
 
-    .name-section {
-      transform: translateY(-340px);
-    }
+      .name-section {
+        transform: translateY(-340px);
+      }
 
-    .scroll {
-      bottom: -30px;
+      .scroll {
+        bottom: -30px;
+      }
     }
   }
 }
