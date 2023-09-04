@@ -31,7 +31,7 @@ body {
   color: #f9f9f9;
   height: 100px;
   z-index: 999;
-  padding: 1px;
+  padding: 1px; 
 }
 
 .nav-container {
@@ -1376,25 +1376,26 @@ span {
 }
 
 /* iPhone 6/7/8  iOS 11 AND iPhone SE 2nd gen iOS 14.6*/
-@-moz-document url-prefix("https://www.keyshawn-scott.com") {
-  @media (width: 375px) and (height: 667px) {
-    .me {
-      height: 300px;
-      width: calc(300px * 1);
-      transform: translateY(-70px);
-    }
 
-    #hello-word {
-      bottom: 340px;
-    }
 
-    .name-section {
-      transform: translateY(-340px);
-    }
 
-    .scroll {
-      bottom: -30px;
-    }
+@media (width: 375px) and (height: 667px) {
+  .me {
+    height: 300px;
+    width: calc(300px * 1);
+    transform: translateY(-70px);
+  }
+
+  #hello-word {
+    bottom: 340px;
+  }
+
+  .name-section {
+    transform: translateY(-340px);
+  }
+
+  .scroll {
+    bottom: -30px;
   }
 }
 
@@ -1413,6 +1414,7 @@ span {
   .name-section {
     transform: translateY(-400px);
   }
+}
 }
 
 .welcome-section h1,
