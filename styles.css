@@ -1127,6 +1127,7 @@ span {
 
 /* SPECIFIC DEVICES */
 /* iPad Air iPadOS 14.7.1 */
+@-moz-document url-prefix() {
 @media (width: 820px) and (height: 1180px) {
   .welcome-section {
     height: 55vh;
@@ -1376,6 +1377,9 @@ span {
 }
 
 /* iPhone 6/7/8  iOS 11 AND iPhone SE 2nd gen iOS 14.6*/
+
+
+
 @media (width: 375px) and (height: 667px) {
   .me {
     height: 300px;
@@ -1412,7 +1416,7 @@ span {
     transform: translateY(-400px);
   }
 }
-
+}
 
 .welcome-section h1,
 .welcome-section p.who-i-am,
