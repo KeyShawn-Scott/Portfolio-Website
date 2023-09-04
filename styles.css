@@ -1376,7 +1376,7 @@ span {
 }
 
 /* iPhone 6/7/8  iOS 11 AND iPhone SE 2nd gen iOS 14.6*/
-@media screen and (width: 375px) and (height: 667px) {
+@media screen and (max-width: 375px) and (max-height: 667px) {
   .me {
     height: 300px;
     width: calc(300px * 1);
