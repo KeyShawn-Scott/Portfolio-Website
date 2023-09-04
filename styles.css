@@ -1376,8 +1376,7 @@ span {
 }
 
 /* iPhone 6/7/8  iOS 11 AND iPhone SE 2nd gen iOS 14.6*/
-
-@media (width: 375px) and (height: 667px) {
+@media screen and (width: 375px) and (height: 667px) {
   .me {
     height: 300px;
     width: calc(300px * 1);
@@ -1396,7 +1395,6 @@ span {
     bottom: -30px;
   }
 }
-
 /* iPhone 6/7/8 Plus iOS 11 */
 @media (width: 414px) and (height: 736px) {
   .me {
