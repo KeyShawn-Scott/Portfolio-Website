@@ -22,7 +22,7 @@ body {
 }
 
 .top-nav {
-  /* position: relative; */
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -313,7 +313,7 @@ a {
   left: 0px;
   height: 6px;
   width: 100%;
-  border: solid 2px #ffb6c1;
+  border: 2px solid #ffb6c1;
   border-color: #ffb6c1 transparent transparent transparent;
   border-radius: 30%;
 }
