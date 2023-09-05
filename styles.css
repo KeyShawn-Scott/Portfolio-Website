@@ -309,13 +309,13 @@ a {
 #underlined:after {
   content: "";
   position: absolute;
-  bottom: -5px;
+  bottom: 0px;
   left: 0px;
-  height: 6px;
+  height: 4px;
   width: 100%;
-  border: 2px solid #ffb6c1;
-  border-color: #ffb6c1 transparent transparent transparent;
+  border-bottom: 2px solid #ffb6c1;
   border-radius: 30%;
+  transform: rotate(180deg);
 }
 
 span {
