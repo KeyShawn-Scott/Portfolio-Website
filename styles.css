@@ -19,7 +19,7 @@ body {
   height: 100%;
   overflow-x: hidden;
   user-select: none;
-  /* background-color: #1c232e; */
+  color: #1c232e;
 }
 
 .top-nav {
@@ -29,7 +29,6 @@ body {
   align-items: center;
   justify-content: space-between;
   color: #f9f9f9;
-  background-color: #1c232e;
   height: 100px;
   z-index: 999;
   padding: 1px;
