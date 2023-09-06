@@ -19,7 +19,6 @@ body {
   height: 100%;
   overflow-x: hidden;
   user-select: none;
-  background-color: #1c232e;
 }
 
 .top-nav {
@@ -28,6 +27,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  background-color: #1c232e;
   color: #f9f9f9;
   height: 100px;
   z-index: 999;
@@ -1160,21 +1160,32 @@ span {
   }
 
   .me {
-    transform: translateY(-400px);
+    height: 370px;
+    width: calc(370px * 1);
+    transform: translateY(150px);
   }
 
   #hello-word {
-    bottom: 620px;
+    bottom: 220px;
+    font-size: 180px;
   }
 
   .name-section {
-    transform: translateY(-690px);
+    transform: translateY(-115px);
   }
 
-  .scroll {
-    bottom: 500px;
+  .about-section {
+    padding: 4rem 2vw;
   }
+}
 
+@media screen and (width: 1180px) and (height: 820px) {
+  .nav-items a {
+    display: none;
+  }
+  .name-section {
+    transform: translateY(-200px);
+  }
   .about-section {
     padding: 4rem 2vw;
   }
@@ -1187,21 +1198,32 @@ span {
   }
 
   .me {
-    transform: translateY(-300px);
+    height: 370px;
+    width: calc(370px * 1);
+    transform: translateY(150px);
   }
 
   #hello-word {
-    bottom: 520px;
+    bottom: 220px;
+    font-size: 180px;
   }
 
   .name-section {
-    transform: translateY(-590px);
+    transform: translateY(-115px);
   }
 
-  .scroll {
-    bottom: 400px;
+  .about-section {
+    padding: 4rem 2vw;
   }
+}
 
+@media screen and (width: 1080px) and (height: 810px) {
+  .nav-items a {
+    display: none;
+  }
+  .name-section {
+    transform: translateY(-200px);
+  }
   .about-section {
     padding: 4rem 2vw;
   }
@@ -1214,21 +1236,32 @@ span {
   }
 
   .me {
-    transform: translateY(-300px);
+    height: 350px;
+    width: calc(350px * 1);
+    transform: translateY(150px);
   }
 
   #hello-word {
-    bottom: 520px;
+    bottom: 220px;
+    font-size: 180px;
   }
 
   .name-section {
-    transform: translateY(-590px);
+    transform: translateY(-115px);
   }
 
-  .scroll {
-    bottom: 400px;
+  .about-section {
+    padding: 4rem 2vw;
   }
+}
 
+@media screen and (width: 1024px) and (height: 768px) {
+  .nav-items a {
+    display: none;
+  }
+  .name-section {
+    transform: translateY(-200px);
+  }
   .about-section {
     padding: 4rem 2vw;
   }
@@ -1237,25 +1270,36 @@ span {
 /* iPad Pro (11-inch) iPadOS 14.7.1 */
 @media screen and (width: 834px) and (height: 1194px) {
   .welcome-section {
-    height: 53vh;
+    height: 55vh;
   }
 
   .me {
-    transform: translateY(-450px);
+    height: 370px;
+    width: calc(370px * 1);
+    transform: translateY(150px);
   }
 
   #hello-word {
-    bottom: 650px;
+    bottom: 220px;
+    font-size: 180px;
   }
 
   .name-section {
-    transform: translateY(-720px);
+    transform: translateY(-115px);
   }
 
-  .scroll {
-    bottom: 510px;
+  .about-section {
+    padding: 4rem 2vw;
   }
+}
 
+@media screen and (width: 1194px) and (height: 834px) {
+  .nav-items a {
+    display: none;
+  }
+  .name-section {
+    transform: translateY(-200px);
+  }
   .about-section {
     padding: 4rem 2vw;
   }
@@ -1264,23 +1308,15 @@ span {
 /* iPad Pro (12.9-inch) iPadOS 14.7.1 */
 @media screen and (width: 1024px) and (height: 1366px) {
   .welcome-section {
-    height: 55vh;
-  }
-
-  .me {
-    transform: translateY(-600px);
+    height: 60vh;
   }
 
   #hello-word {
-    bottom: 750px;
+    bottom: 260px;
   }
 
   .name-section {
-    transform: translateY(-830px);
-  }
-
-  .scroll {
-    bottom: 600px;
+    transform: translateY(-190px);
   }
 
   .about-section {
@@ -1288,44 +1324,76 @@ span {
   }
 }
 
+@media screen and (width: 1366px) and (height: 1024px) {
+  .nav-items a {
+    display: none;
+  }
+  .welcome-section {
+    height: 80vh;
+  }
+  .name-section {
+    transform: translateY(-200px);
+  }
+  .about-section {
+    padding: 4rem 2vw;
+  }
+}
+
 /* iPhone 11 Pro iOS 14.6 AND iPhone 12/13 mini iOS 14.6 AND iPhone X/XS iOS 12*/
 @media screen and (width: 375px) and (height: 812px) {
-  .me {
-    height: 340px;
-    width: calc(340px * 1);
+  .welcome-section {
+    height: 92vh;
   }
+}
 
+@media screen and (width: 812px) and (height: 375px) {
+  .nav-items a {
+    display: none;
+  }
+  .welcome-section {
+    height: 180vh;
+  }
+  .me {
+    height: 370px;
+    width: calc(370px * 1);
+    transform: translateY(100px);
+  }
   #hello-word {
-    bottom: 470px;
+    bottom: 280px;
+    font-size: 190px;
   }
 
   .name-section {
-    transform: translateY(-470px);
+    transform: translateY(-190px);
   }
 }
 
 /* iPhone 11 Pro Max iOS 14.6 AND iPhone XR/11 iOS 12 AND iPhone XS Max iOS 12*/
 @media screen and (width: 414px) and (height: 896px) {
   .welcome-section {
-    height: 90vh;
+    height: 85vh;
   }
+}
 
+@media screen and (width: 896px) and (height: 414px) {
+  .nav-items a {
+    display: none;
+  }
+  .welcome-section {
+    height: 180vh;
+  }
   .me {
-    height: 340px;
-    width: calc(340px * 1);
-    transform: translateY(-200px);
+    height: 370px;
+    width: calc(370px * 1);
+    transform: translateY(50px);
   }
-
   #hello-word {
-    bottom: 550px;
+    bottom: 300px;
+    font-size: 190px;
   }
 
   .name-section {
-    transform: translateY(-550px);
-  }
-
-  .scroll {
-    bottom: 100px;
+    transform: translateY(-210px);
   }
 }
 
@@ -1334,110 +1402,323 @@ span {
   .welcome-section {
     height: 90vh;
   }
+}
 
-  .me {
-    height: 340px;
-    width: calc(340px * 1);
-    transform: translateY(-200px);
+@media screen and (width: 844px) and (height: 390px) {
+  .nav-items a {
+    display: none;
   }
-
+  .welcome-section {
+    height: 180vh;
+  }
+  .me {
+    height: 370px;
+    width: calc(370px * 1);
+    transform: translateY(50px);
+  }
   #hello-word {
-    bottom: 510px;
+    bottom: 300px;
+    font-size: 190px;
   }
 
   .name-section {
-    transform: translateY(-510px);
-  }
-
-  .scroll {
-    bottom: 100px;
+    transform: translateY(-210px);
   }
 }
 
 /* iPhone 12/13 Pro Max iOS 14.6 */
 @media screen and (width: 428px) and (height: 926px) {
   .welcome-section {
-    height: 90vh;
+    height: 80vh;
   }
+}
 
+@media screen and (width: 926px) and (height: 428px) {
+  .nav-items a {
+    display: none;
+  }
+  .welcome-section {
+    height: 180vh;
+  }
   .me {
-    height: 340px;
-    width: calc(340px * 1);
-    transform: translateY(-200px);
+    height: 370px;
+    width: calc(370px * 1);
+    transform: translateY(50px);
   }
-
   #hello-word {
-    bottom: 560px;
+    bottom: 300px;
+    font-size: 190px;
   }
 
   .name-section {
-    transform: translateY(-560px);
-  }
-
-  .scroll {
-    bottom: 100px;
+    transform: translateY(-210px);
   }
 }
 
 /* iPhone 5/SE iOS 10.3.1 */
 @media screen and (width: 320px) and (height: 568px) {
   .welcome-section {
+    height: 130vh;
+  }
+}
+
+@media screen and (width: 568px) and (height: 320px) {
+  .nav-items a {
+    display: none;
+  }
+
+  .welcome-section {
+    height: 240vh;
+  }
+
+  .me {
+    height: 350px;
+    width: calc(350px * 1);
+    margin: 0 auto;
+    transform: translateY(-170px);
+  }
+
+  .text-wrapper {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin-right: 300px;
+  }
+
+  #hello-word {
+    font-size: 122px;
+    bottom: 500px;
+  }
+
+  .who-i-am {
+    font-size: 28px;
+  }
+
+  .who-i-am:first-child {
+    margin-top: -35px;
+  }
+
+  .who-i-am:last-child {
+    margin-top: 0px;
+  }
+
+  .name-section {
+    transform: translateY(-344px);
+  }
+
+  .scroll {
+    left: 50%;
+    margin-bottom: -60px;
+  }
+}
+
+/* iPhone 6/7/8  iOS 11 AND iPhone 6/7/8 Plus iOS 11 AND iPhone SE 2nd gen iOS 14.6*/
+@media screen and (width: 375px) and (height: 667px) {
+  .welcome-section {
     height: 110vh;
   }
+}
+
+@media screen and (width: 667px) and (height: 375px) {
+  .nav-items a {
+    display: none;
+  }
+
+  .welcome-section {
+    height: 200vh;
+  }
 
   .me {
-    transform: translateY(-10px);
+    height: 350px;
+    width: calc(350px * 1);
+    margin: 0 auto;
+    transform: translateY(-170px);
+  }
+
+  .text-wrapper {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin-right: 300px;
   }
 
   #hello-word {
-    bottom: 250px;
+    font-size: 122px;
+    bottom: 500px;
+  }
+
+  .who-i-am {
+    font-size: 28px;
+  }
+
+  .who-i-am:first-child {
+    margin-top: -35px;
+  }
+
+  .who-i-am:last-child {
+    margin-top: 0px;
   }
 
   .name-section {
-    transform: translateY(-250px);
+    transform: translateY(-344px);
   }
 
   .scroll {
-    bottom: -100px;
+    left: 50%;
+    margin-bottom: -60px;
   }
 }
 
-/* iPhone 6/7/8  iOS 11 AND iPhone SE 2nd gen iOS 14.6*/
-@media screen and (width: 375px) and (height: 667px) {
+@media screen and (width: 736px) and (height: 414px) {
+  .nav-items a {
+    display: none;
+  }
+
+  .welcome-section {
+    height: 180vh;
+  }
+
   .me {
-    height: 300px;
-    width: calc(300px * 1);
-    transform: translateY(-150px);
+    height: 350px;
+    width: calc(350px * 1);
+    margin: 0 auto;
+    transform: translateY(-170px);
+  }
+
+  .text-wrapper {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin-right: 300px;
   }
 
   #hello-word {
-    bottom: 430px;
+    font-size: 122px;
+    bottom: 500px;
+  }
+
+  .who-i-am {
+    font-size: 28px;
+  }
+
+  .who-i-am:first-child {
+    margin-top: -35px;
+  }
+
+  .who-i-am:last-child {
+    margin-top: 0px;
   }
 
   .name-section {
-    transform: translateY(-274px);
+    transform: translateY(-344px);
   }
 
   .scroll {
-    bottom: 50px;
+    left: 50%;
+    margin-bottom: -60px;
   }
 }
 
-/* iPhone 6/7/8 Plus iOS 11 */
-@media screen and (width: 414px) and (height: 736px) {
-  .me {
-    height: 300px;
-    width: calc(300px * 1);
-    transform: translateY(-100px);
+/* Galaxy Note 20 Android 11*/
+@media screen and (width: 412px) and (height: 915px) {
+  .welcome-section {
+    height: 80vh;
   }
+}
 
-  #hello-word {
-    bottom: 400px;
+/* Galaxy Note 20 Ultra Android 11 */
+@media screen and (width: 412px) and (height: 883px) {
+  .welcome-section {
+    height: 83vh;
   }
+}
 
-  .name-section {
-    transform: translateY(-400px);
-  }
+/* Galaxy Note 3 Android 4.3 */
+@media screen and (width: 360px) and (height: 640px) {
+}
+
+/* Galaxy Note 9 Android 7 */
+@media screen and (width: ) and (height: ) {
+}
+
+/* Galaxy S10/S10+ Android 11 */
+@media screen and (width: ) and (height: ) {
+}
+
+/* Galaxy S20 Android 11 */
+@media screen and (width: ) and (height: ) {
+}
+
+/* Galaxy S20 Ultra Android 11 */
+@media screen and (width: ) and (height: ) {
+}
+
+/* Galaxy S20+ Android 11 */
+@media screen and (width: ) and (height: ) {
+}
+
+/* Galaxy S5 Android 5 */
+@media screen and (width: ) and (height: ) {
+}
+
+/* Galaxy S9/S9+ Android 7 */
+@media screen and (width: ) and (height: ) {
+}
+
+/* Kindle Fire HDX Linux */
+@media screen and (width: ) and (height: ) {
+}
+
+/* Laptop with HiDPI screen */
+@media screen and (width: ) and (height: ) {
+}
+
+/* Laptop with MDPI screen */
+@media screen and (width: ) and (height: ) {
+}
+
+/* Laptop with touch */
+@media screen and (width: ) and (height: ) {
+}
+
+/* LG Optimus L70 Android 4.4.2 */
+@media screen and (width: ) and (height: ) {
+}
+
+/* Microsoft Lumia 550 Windows Phone 10 */
+@media screen and (width: ) and (height: ) {
+}
+
+/* Microsoft Lumia 950 Windows Phone 10 */
+@media screen and (width: ) and (height: ) {
+}
+
+/* Nexus 10 Android 6.0.1 */
+@media screen and (width: ) and (height: ) {
+}
+
+/* Nexus 5X Android 8 */
+@media screen and (width: ) and (height: ) {
+}
+
+/* Nexus 6P Android 8 */
+@media screen and (width: ) and (height: ) {
+}
+
+/* Nexus 7 Android 6.0.1 */
+@media screen and (width: ) and (height: ) {
+}
+
+/* Nokia 8110 4G */
+@media screen and (width: ) and (height: ) {
+}
+
+/* Pixel 2 Android 8 */
+@media screen and (width: ) and (height: ) {
+}
+
+/* Pixel 5 Android 11 */
+@media screen and (width: ) and (height: ) {
 }
 
 .welcome-section h1,
