@@ -663,8 +663,9 @@ span {
 .backtotop {
   position: absolute;
   color: #373d47;
-  bottom: 40px;
-  right: 50px;
+  bottom: 1px;
+  right: 1px;
+  padding: 20px;
   font-size: 30px;
 }
 
@@ -674,7 +675,7 @@ span {
 
 /* Media Queries */
 /* X-Small Devices */
-@media screen and (max-width: 500px) {
+@media (max-width: 500px) {
   .nav-items a {
     display: none;
   }
@@ -789,15 +790,12 @@ span {
   }
 
   .backtotop {
-    bottom: 1px;
-    right: 1px;
-    padding: 20px;
     font-size: 25px;
   }
 }
 
 /* Small Devices */
-@media screen and(min-width: 501px) and (max-width: 575px) {
+@media (min-width: 501px) and (max-width: 575px) {
   .nav-items a {
     display: none;
   }
@@ -888,15 +886,12 @@ span {
   }
 
   .backtotop {
-    bottom: 1px;
-    right: 1px;
-    padding: 20px;
     font-size: 25px;
   }
 }
 
 /* Medium Devices */
-@media screen and(min-width: 576px) and (max-width: 767px) {
+@media (min-width: 576px) and (max-width: 767px) {
   .nav-items a {
     display: none;
   }
@@ -977,17 +972,10 @@ span {
   #contact-p {
     font-size: 13px;
   }
-
-  .backtotop {
-    bottom: 1px;
-    right: 1px;
-    padding: 20px;
-    font-size: 25px;
-  }
 }
 
 /* Large Devices */
-@media screen and(min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .nav-items a {
     display: none;
   }
@@ -1038,17 +1026,10 @@ span {
   .projects-section {
     padding: 6rem 2rem 2rem 2rem;
   }
-
-  .backtotop {
-    bottom: 1px;
-    right: 1px;
-    padding: 20px;
-    font-size: 25px;
-  }
 }
 
 /* Extra Large Devices */
-@media screen and(min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   .menu-button {
     display: none;
   }
@@ -1083,17 +1064,10 @@ span {
   .projects-section {
     padding: 6rem 2rem 2rem 2rem;
   }
-
-  .backtotop {
-    bottom: 1px;
-    right: 1px;
-    padding: 20px;
-    font-size: 25px;
-  }
 }
 
 /* Extra Extra Large Devices */
-@media screen and(min-width: 1200px) and (max-width: 1399px) {
+@media (min-width: 1200px) and (max-width: 1399px) {
   .menu-button {
     display: none;
   }
@@ -1116,13 +1090,6 @@ span {
 
   .projects-section {
     padding: 6rem 2rem 2rem 2rem;
-  }
-
-  .backtotop {
-    bottom: 1px;
-    right: 1px;
-    padding: 20px;
-    font-size: 25px;
   }
 }
 
@@ -1619,10 +1586,16 @@ span {
   }
 }
 
-/* Galaxy Note 20 Android 11*/
+/* Galaxy Note 20 Android 11 AND Galaxy S20 Ultra Android 11*/
 @media screen and (width: 412px) and (height: 915px) {
   .welcome-section {
     height: 80vh;
+  }
+}
+
+@media screen and (width: 915px) and (height: 412px) {
+  .welcome-section {
+    height: 180vh;
   }
 }
 
@@ -1633,92 +1606,174 @@ span {
   }
 }
 
-/* Galaxy Note 3 Android 4.3 */
+@media screen and (width: 883px) and (height: 412px) {
+  .welcome-section {
+    height: 180vh;
+  }
+}
+
+/* Galaxy Note 3 Android 4.3 AND Galaxy S5 Android 5 AND Microsoft Lumia 550 Windows Phone 10 AND Microsoft Lumia 950 Windows Phone 10 */
 @media screen and (width: 360px) and (height: 640px) {
+  .welcome-section {
+    height: 115vh;
+  }
+}
+
+@media screen and (width: 640px) and (height: 360px) {
+  .welcome-section {
+    height: 210vh;
+  }
 }
 
 /* Galaxy Note 9 Android 7 */
-@media screen and (width: ) and (height: ) {
+@media screen and (width: 414px) and (height: 846px) {
+  .welcome-section {
+    height: 90vh;
+  }
+}
+
+@media screen and (width: 846px) and (height: 414px) {
+  .welcome-section {
+    height: 180vh;
+  }
 }
 
 /* Galaxy S10/S10+ Android 11 */
-@media screen and (width: ) and (height: ) {
+@media screen and (width: 760px) and (height: 360px) {
+  .welcome-section {
+    height: 210vh;
+  }
 }
 
 /* Galaxy S20 Android 11 */
-@media screen and (width: ) and (height: ) {
+@media screen and (width: 360px) and (height: 800px) {
+  .welcome-section {
+    height: 95vh;
+  }
 }
 
-/* Galaxy S20 Ultra Android 11 */
-@media screen and (width: ) and (height: ) {
+@media screen and (width: 800px) and (height: 360px) {
+  .welcome-section {
+    height: 210vh;
+  }
 }
 
 /* Galaxy S20+ Android 11 */
-@media screen and (width: ) and (height: ) {
+@media screen and (width: 384px) and (height: 854px) {
+  .welcome-section {
+    height: 85vh;
+  }
 }
 
-/* Galaxy S5 Android 5 */
-@media screen and (width: ) and (height: ) {
+@media screen and (width: 854px) and (height: 384px) {
+  .welcome-section {
+    height: 200vh;
+  }
 }
 
 /* Galaxy S9/S9+ Android 7 */
-@media screen and (width: ) and (height: ) {
+@media screen and (width: 740px) and (height: 360px) {
+  .welcome-section {
+    height: 210vh;
+  }
 }
 
-/* Kindle Fire HDX Linux */
-@media screen and (width: ) and (height: ) {
+/* Kindle Fire HDX Linux AND Laptop with MDPI screen AND Nexus 10 Android 6.0.1*/
+@media screen and (width: 800px) and (height: 1280px) {
+  .welcome-section {
+    height: 60vh;
+  }
 }
 
 /* Laptop with HiDPI screen */
-@media screen and (width: ) and (height: ) {
+@media screen and (width: 900px) and (height: 1440px) {
+  .welcome-section {
+    height: 50vh;
+  }
 }
 
-/* Laptop with MDPI screen */
-@media screen and (width: ) and (height: ) {
+@media screen and (width: 1440px) and (height: 900px) {
+  .welcome-section {
+    height: 85vh;
+  }
 }
 
 /* Laptop with touch */
-@media screen and (width: ) and (height: ) {
+@media screen and (width: 950px) and (height: 1280px) {
+  .welcome-section {
+    height: 60vh;
+  }
 }
 
+@media screen and (width: 1280px) and (height: 950px) {
+  .welcome-section {
+    height: 80vh;
+  }
+}
 /* LG Optimus L70 Android 4.4.2 */
-@media screen and (width: ) and (height: ) {
+@media screen and (width: 384px) and (height: 640px) {
+  .welcome-section {
+    height: 115vh;
+  }
 }
 
-/* Microsoft Lumia 550 Windows Phone 10 */
-@media screen and (width: ) and (height: ) {
+@media screen and (width: 640px) and (height: 384px) {
+  .welcome-section {
+    height: 200vh;
+  }
 }
 
-/* Microsoft Lumia 950 Windows Phone 10 */
-@media screen and (width: ) and (height: ) {
-}
-
-/* Nexus 10 Android 6.0.1 */
-@media screen and (width: ) and (height: ) {
-}
-
-/* Nexus 5X Android 8 */
-@media screen and (width: ) and (height: ) {
-}
-
-/* Nexus 6P Android 8 */
-@media screen and (width: ) and (height: ) {
+/* Nexus 5X Android 8 AND Nexus 6P Android 8 */
+@media screen and (width: 732px) and (height: 412px) {
+  .welcome-section {
+    height: 180vh;
+  }
 }
 
 /* Nexus 7 Android 6.0.1 */
-@media screen and (width: ) and (height: ) {
+@media screen and (width: 600px) and (height: 960px) {
+  .welcome-section {
+    height: 80vh;
+  }
 }
 
-/* Nokia 8110 4G */
-@media screen and (width: ) and (height: ) {
+@media screen and (width: 960px) and (height: 600px) {
+  .welcome-section {
+    height: 120vh;
+  }
 }
 
 /* Pixel 2 Android 8 */
-@media screen and (width: ) and (height: ) {
+@media screen and (width: 731px) and (height: 411px) {
+  .welcome-section {
+    height: 180vh;
+  }
+}
+
+/* Pixel 2 XL Android 8 */
+@media screen and (width: 411px) and (height: 823px) {
+  .welcome-section {
+    height: 90vh;
+  }
+}
+
+@media screen and (width: 823px) and (height: 411px) {
+  .welcome-section {
+    height: 180vh;
+  }
 }
 
 /* Pixel 5 Android 11 */
-@media screen and (width: ) and (height: ) {
+@media screen and (width: 393px) and (height: 851px) {
+  .welcome-section {
+    height: 90vh;
+  }
+}
+
+@media screen and (width: 851px) and (height: 393px) {
+  .welcome-section {
+    height: 190vh;
+  }
 }
 
 .welcome-section h1,
